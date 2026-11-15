@@ -1,0 +1,971 @@
+WORD sayfa=77  LATEX sayfa=77
+SAYFA ESLEMESI (Word->LaTeX): 1->1 2->2 3->3 4->4 5->5 6->6 7->7 8->8 9->9 10->10 11->11 12->12 13->13 14->14 15->15 16->16 17->17 18->18 19->19 20->20 21->21 22->22 23->23 24->24 25->25 26->26 27->27 28->28 29->29 30->30 31->31 32->32 33->33 34->34 35->35 36->36 37->37 38->38 39->39 40->40 41->41 42->42 43->43 44->44 45->45 46->46 47->47 48->48 49->49 50->50 51->51 52->52 53->53 54->54 55->55 56->56 57->57 58->58 59->59 60->60 61->61 62->62 63->63 64->64 65->65 66->66 67->67 68->68 69->69 70->70 71->71 72->72 73->73 74->74 75->75 76->76 77->77
+
+=== Sayfa 1->1  [P|P]  no: W=-(y=0.0,x=0.0)  L=-(y=0.0,x=0.0)  satir W=16 L=15
+  W ilk: T.C.
+  W son: AY YIL (OCAK 2022)
+  L ilk: T.C.
+  L son: AY YIL (OCAK 2022)
+  - W[172.2,529.1] almadan önce Gözden Geçir > İzleme > Özgün (Review >
+  - W[172.2,542.9] Tracking > Orijinal) seçilmeli daha sonra çıktı alınmalıdır.
+  - W[172.2,556.8] Bu bir nottur, çıktı almadan önce siliniz.
+  + L[169.4,536.8] almadan önce \documentclass[notsuz]{sauthesis} seçilmeli daha
+  + L[169.4,550.6] sonra çıktı alınmalıdır. Bu bir nottur, çıktı almadan önce siliniz.
+  eslesen=13  dy[min,max]=[-0.1,7.6]  dx[min,max]=[-7.1,1.7]  sapma>1pt=4
+     dy=-0.1 dx=+1.7  ÜÇ SATIRA SIĞDIRINIZ
+     dy=+7.6 dx=-2.9  Tez bu şablon kullanılarak yazılabilir. Eğer bu şa
+     dy=+7.6 dx=-2.9  yazılacak ise açıklamaların çıktılarda görünmemesi
+     dy=-0.0 dx=-7.1  AY YIL (OCAK 2022)
+
+=== Sayfa 2->2  [P|P]  no: W=-(y=0.0,x=0.0)  L=-(y=0.0,x=0.0)  satir W=0 L=0
+
+=== Sayfa 3->3  [P|P]  no: W=-(y=0.0,x=0.0)  L=-(y=0.0,x=0.0)  satir W=13 L=13
+  W ilk: T.C.
+  W son: AY YIL
+  L ilk: T.C.
+  L son: AY YIL
+  eslesen=13  dy[min,max]=[-0.1,0.0]  dx[min,max]=[-0.3,1.7]  sapma>1pt=1
+     dy=-0.1 dx=+1.7  ÜÇ SATIRA SIĞDIRINIZ
+
+=== Sayfa 4->4  [P|P]  no: W=-(y=0.0,x=0.0)  L=-(y=0.0,x=0.0)  satir W=0 L=0
+
+=== Sayfa 5->5  [P|P]  no: W=iii(y=764.3,x=320.5)  L=iii(y=764.3,x=318.9)  satir W=15 L=15
+  W ilk: Metin girmek için burayı tıklatın. tarafından hazırlanan "Metin girmek için burayı
+  W son: (Gerekliyse) ...... Üniversitesi
+  L ilk: Metin girmek için burayı tıklatın. tarafından hazırlanan "Metin girmek için burayı
+  L son: (Gerekliyse) ...... Üniversitesi
+  - W[113.4,200.3] Bir öğe seçin. Bilim Dalı'nda (varsa) Bir öğe seçin.olarak kabul edilmiştir.
+  + L[113.4,200.3] Bir öğe seçin. Bilim Dalı'nda (varsa) Bir öğe seçin. olarak kabul edilmiştir.
+  eslesen=14  dy[min,max]=[-0.0,0.1]  dx[min,max]=[-0.1,0.0]  sapma>1pt=0
+
+=== Sayfa 6->6  [P|P]  no: W=iv(y=764.3,x=277.9)  L=iv(y=764.3,x=276.4)  satir W=0 L=0
+
+=== Sayfa 7->7  [P|P]  no: W=v(y=764.3,x=320.4)  L=v(y=764.3,x=318.9)  satir W=18 L=18
+  W ilk: ETİK İLKE VE KURALLARA UYGUNLUK BEYANNAMESİ
+  W son: Öğrencinin Adı Soyadı
+  L ilk: ETİK İLKE VE KURALLARA UYGUNLUK BEYANNAMESİ
+  L son: Öğrencinin Adı Soyadı
+  eslesen=18  dy[min,max]=[-0.0,0.1]  dx[min,max]=[-0.2,-0.0]  sapma>1pt=0
+
+=== Sayfa 8->8  [P|P]  no: W=vi(y=764.3,x=277.9)  L=vi(y=764.3,x=276.4)  satir W=0 L=0
+
+=== Sayfa 9->9  [P|P]  no: W=vii(y=764.3,x=320.4)  L=vii(y=764.3,x=318.9)  satir W=1 L=1
+  W ilk: Eşime ve çocuklarıma (Örnektir, farklı bir ifade yazılabilir)
+  W son: Eşime ve çocuklarıma (Örnektir, farklı bir ifade yazılabilir)
+  L ilk: Eşime ve çocuklarıma (Örnektir, farklı bir ifade yazılabilir)
+  L son: Eşime ve çocuklarıma (Örnektir, farklı bir ifade yazılabilir)
+  eslesen=1  dy[min,max]=[-0.3,-0.3]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=0
+
+=== Sayfa 10->10  [P|P]  no: W=viii(y=764.3,x=278.0)  L=viii(y=764.3,x=276.4)  satir W=0 L=0
+
+=== Sayfa 11->11  [P|P]  no: W=ix(y=764.3,x=320.4)  L=ix(y=764.3,x=318.9)  satir W=8 L=8
+  W ilk: TEŞEKKÜR
+  W son: Ad Soyad
+  L ilk: TEŞEKKÜR
+  L son: Ad Soyad
+  - W[113.4,227.3] Tez danışmanına (ve varsa ortak danışmana), tezi destekleyen kurum ve kuruluşlara
+  - W[113.4,241.1] ve yardımcı olan kişilere bu kısımda teşekkür edilir. Teşekkür metninin altında sağa
+  + L[113.4,227.3] Tez danışmanına (ve varsa ortak danışmana), tezi destekleyen kurum ve kuruluşlara ve
+  + L[113.4,241.1] yardımcı olan kişilere bu kısımda teşekkür edilir. Teşekkür metninin altında sağa
+  eslesen=6  dy[min,max]=[0.0,0.1]  dx[min,max]=[-0.1,-0.0]  sapma>1pt=0
+
+=== Sayfa 12->12  [P|P]  no: W=x(y=764.3,x=277.9)  L=x(y=764.3,x=276.4)  satir W=0 L=0
+
+=== Sayfa 13->13  [P|P]  no: W=xi(y=764.3,x=320.4)  L=xi(y=764.3,x=318.9)  satir W=41 L=41
+  W ilk: İÇİNDEKİLER
+  W son: Dipnotlar ................................................................................
+  L ilk: İÇİNDEKİLER
+  L son: 4.3. Dipnotlar ...........................................................................
+  - W[113.4,207.5] ETİK İLKE VE KURALLARA UYGUNLUK BEYANNAMESİ ........................ v
+  - W[113.4,221.3] TEŞEKKÜR .....................................................................................................
+  - W[113.4,235.1] İÇİNDEKİLER ..................................................................................................
+  - W[113.4,248.9] KISALTMALAR ..................................................................................................
+  - W[113.4,262.7] SİMGELER .....................................................................................................
+  - W[113.4,276.5] TABLO LİSTESİ ................................................................................................
+  - W[113.4,290.3] ŞEKİL LİSTESİ ................................................................................................
+  - W[113.4,304.1] ÖZET xxi
+  - W[113.4,317.9] SUMMARY ......................................................................................................
+  - W[113.4,331.7] 1. GİRİŞ (BİRİNCİ DERECE BAŞLIK) ................................................................. 1
+  - W[142.8,345.5] Tezin Kapsamı (İkinci Derece Başlık Nasıl: İlk Harfler Büyük, İkinci Derece
+  - W[124.8,359.3] Başlık Nasıl: İlk Harfler Büyük) .............................................................................
+  - W[142.8,373.1] Tezin Amacı ..................................................................................................
+  - W[137.5,386.9] 1.2.1. Tezin ikincil amacı ...................................................................................
+  - W[149.4,400.7] 1.2.1.1. Dördüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ............ 2
+  - W[149.4,414.5] 1.2.1.2. Dördüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ............ 2
+  - W[142.8,428.3] Literatür Araştırması ........................................................................................
+  - W[142.8,442.1] Hipotez ......................................................................................................
+  - W[113.4,455.9] 2. ŞEKİL VE Tablolar .........................................................................................
+  - W[142.8,469.7] Şekil Atıflar ve Şekil Örneği ............................................................................. 5
+  - W[142.8,483.5] Yatay Sayfada Şekil Örneği .............................................................................. 8
+  - W[142.8,497.3] Tablo Atıfları ve Tablo Örneği ........................................................................ 10
+  - W[142.8,511.1] Yatay Sayfada Tablo Örneği ........................................................................... 13
+  - W[113.4,524.9] 3. METİNLER ..................................................................................................
+  - W[142.8,538.8] Gövde Metinleri ..............................................................................................
+  - W[142.8,552.5] Sayfa Kenar Boşlukları ................................................................................... 16
+  - W[142.8,566.3] Denklemler ...................................................................................................
+  - W[137.5,580.2] 3.3.1. Üçüncü derece başlık örneği .................................................................... 18
+  + L[113.4,207.9] ETİK İLKE VE KURALLARA UYGUNLUK BEYANNAMESİ ....................... v
+  + L[113.4,221.7] TEŞEKKÜR .....................................................................................................
+  + L[113.4,235.5] İÇİNDEKİLER ..................................................................................................
+  + L[113.4,249.3] KISALTMALAR ..................................................................................................
+  + L[113.4,263.1] SİMGELER .....................................................................................................
+  + L[113.4,276.9] TABLO LİSTESİ ................................................................................................
+  + L[113.4,290.7] ŞEKİL LİSTESİ ................................................................................................
+  + L[113.4,304.5] ÖZET .........................................................................................................
+  + L[113.4,318.3] SUMMARY ......................................................................................................
+  + L[113.4,332.1] 1. GİRİŞ (BİRİNCİ DERECE BAŞLIK) ................................................................ 1
+  + L[124.7,345.9] 1.1. Tezin Kapsamı (İkinci Derece Başlık Nasıl: İlk Harfler Büyük, İkinci Derece
+  + L[124.7,359.7] Başlık Nasıl: İlk Harfler Büyük) .............................................................................
+  + L[124.7,373.5] 1.2. Tezin Amacı .............................................................................................
+  + L[137.5,387.3] 1.2.1. Tezin ikincil amacı ...................................................................................
+  + L[149.4,401.1] 1.2.1.1. Dördüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ........... 2
+  + L[149.4,414.9] 1.2.1.2. Dördüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ........... 2
+  + L[124.7,428.8] 1.3. Literatür Araştırması ...................................................................................
+  + L[124.7,442.6] 1.4. Hipotez .................................................................................................
+  + L[113.4,456.4] 2. ŞEKİL VE TABLOLAR ...................................................................................... 5
+  + L[124.7,470.2] 2.1. Şekil Atıflar ve Şekil Örneği ...........................................................................
+  + L[124.7,484.0] 2.2. Yatay Sayfada Şekil Örneği ............................................................................. 
+  + L[124.7,497.8] 2.3. Tablo Atıfları ve Tablo Örneği ...................................................................... 10
+  + L[124.7,511.6] 2.4. Yatay Sayfada Tablo Örneği .......................................................................... 13
+  + L[113.4,525.4] 3. METİNLER ..................................................................................................
+  + L[124.7,539.2] 3.1. Gövde Metinleri .........................................................................................
+  + L[124.7,553.0] 3.2. Sayfa Kenar Boşlukları ..................................................................................
+  + L[124.7,566.8] 3.3. Denklemler ..............................................................................................
+  + L[137.5,580.6] 3.3.1. Üçüncü derece başlık örneği ................................................................... 18
+  - W[149.4,607.8] dördüncü derece başlık örneği ....................................................................... 19
+  - W[142.8,621.6] İleri Arıtma Metotları ...................................................................................... 
+  - W[142.8,635.3] Deneysel Çalışmalar ........................................................................................ 2
+  - W[113.4,649.1] 4. ATIFLAR, ALINTILAR VE DİPNOTLAR...................................................... 23
+  - W[142.8,662.9] Atıflar (kaynakların metin içinde gösterimi) ................................................... 23
+  - W[137.5,676.7] 4.1.1. Yazar soyadına göre atıf verme ............................................................... 23
+  - W[137.5,690.5] 4.1.2. Numara ile atıf verme .............................................................................. 24
+  - W[149.4,704.3] 4.1.2.1. Kaynakların listelenmesi ................................................................... 24
+  - W[142.8,718.1] Alıntılar ....................................................................................................
+  - W[142.8,731.9] Dipnotlar ....................................................................................................
+  + L[149.4,608.2] dördüncü derece başlık örneği ...................................................................... 19
+  + L[124.7,622.0] 3.4. İleri Arıtma Metotları ..................................................................................
+  + L[124.7,635.8] 3.5. Deneysel Çalışmalar .....................................................................................
+  + L[113.4,649.6] 4. ATIFLAR, ALINTILAR VE DİPNOTLAR .................................................... 23
+  + L[124.7,663.4] 4.1. Atıflar (kaynakların metin içinde gösterimi) .................................................. 23
+  + L[137.5,677.3] 4.1.1. Yazar soyadına göre atıf verme .............................................................. 23
+  + L[137.5,691.1] 4.1.2. Numara ile atıf verme ............................................................................. 24
+  + L[149.4,704.9] 4.1.2.1. Kaynakların listelenmesi .................................................................. 24
+  + L[124.7,718.7] 4.2. Alıntılar ...............................................................................................
+  + L[124.7,732.5] 4.3. Dipnotlar ...............................................................................................
+  eslesen=3  dy[min,max]=[0.0,0.5]  dx[min,max]=[-0.1,-0.0]  sapma>1pt=0
+
+=== Sayfa 14->14  [P|P]  no: W=xii(y=764.3,x=277.9)  L=xii(y=764.3,x=276.4)  satir W=16 L=16
+  W ilk: İkinci Derece Başlık Nasıl: İlk Harfler Büyük ............................................
+  W son: ÖZGEÇMİŞ .................................................................................
+  L ilk: 4.4. İkinci Derece Başlık Nasıl: İlk Harfler Büyük .......................................
+  L son: ÖZGEÇMİŞ .................................................................................
+  - W[100.3, 82.1] İkinci Derece Başlık Nasıl: İlk Harfler Büyük ................................................ 28
+  - W[ 95.1, 95.9] 4.4.1. Üçüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ..................... 28
+  - W[106.9,109.7] 4.4.1.1. Dördüncü derece başlık nasıl: ilk harf büyük diğerleri küçük .......... 28
+  - W[ 70.9,123.5] 5. GEREKLİ İSE bölüm başlığı .............................................................................. 31
+  - W[100.3,137.3] Deney Sonuçlar ...............................................................................................
+  - W[100.3,151.1] İkinci Derece Başlık Nasıl: İlk Harfler Büyük ................................................ 31
+  - W[ 95.1,164.9] 5.2.1. Üçüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ..................... 31
+  - W[106.9,178.7] 5.2.1.1. Dördüncü derece başlık nasıl: ilk harf büyük diğerleri küçük .......... 31
+  - W[ 70.9,192.5] 6. SONUÇ VE ÖNERİLER ..................................................................................... 33
+  - W[100.3,206.3] Teorik Modeller ..............................................................................................
+  - W[100.3,220.1] İkinci Derece Başlık Nasıl: İlk Harfler Büyük ................................................ 33
+  - W[ 95.1,233.9] 6.2.1. Üçüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ..................... 33
+  - W[106.9,247.7] 6.2.1.1. Dördüncü derece başlık nasıl: ilk harf büyük diğerleri küçük .......... 33
+  - W[ 70.9,261.5] KAYNAKLAR ....................................................................................................
+  - W[ 70.9,275.3] EKLER 43
+  - W[ 70.9,289.1] ÖZGEÇMİŞ .....................................................................................................
+  + L[ 82.2, 82.1] 4.4. İkinci Derece Başlık Nasıl: İlk Harfler Büyük ............................................... 27
+  + L[ 95.0, 95.9] 4.4.1. Üçüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ................... 28
+  + L[106.9,109.7] 4.4.1.1. Dördüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ......... 28
+  + L[ 70.9,123.5] 5. GEREKLİ İSE BÖLÜM BAŞLIĞI ................................................................... 31
+  + L[ 82.2,137.3] 5.1. Deney Sonuçlar ..........................................................................................
+  + L[ 82.2,151.1] 5.2. İkinci Derece Başlık Nasıl: İlk Harfler Büyük ............................................... 31
+  + L[ 95.0,164.9] 5.2.1. Üçüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ................... 31
+  + L[106.9,178.7] 5.2.1.1. Dördüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ......... 31
+  + L[ 70.9,192.6] 6. SONUÇ VE ÖNERİLER .................................................................................... 33
+  + L[ 82.2,206.4] 6.1. Teorik Modeller .........................................................................................
+  + L[ 82.2,220.2] 6.2. İkinci Derece Başlık Nasıl: İlk Harfler Büyük ............................................... 33
+  + L[ 95.0,234.0] 6.2.1. Üçüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ................... 33
+  + L[106.9,247.8] 6.2.1.1. Dördüncü derece başlık nasıl: ilk harf büyük diğerleri küçük ......... 33
+  + L[ 70.9,261.6] KAYNAKLAR ....................................................................................................
+  + L[ 70.9,275.4] EKLER ........................................................................................................
+  + L[ 70.9,289.2] ÖZGEÇMİŞ .....................................................................................................
+
+=== Sayfa 15->15  [P|P]  no: W=xiii(y=764.3,x=320.5)  L=xiii(y=764.3,x=318.9)  satir W=14 L=14
+  W ilk: KISALTMALAR
+  W son: ÜÇE : Üzüm çekirdeği ekstraktı
+  L ilk: KISALTMALAR
+  L son: ÜÇE : Üzüm çekirdeği ekstraktı
+  eslesen=14  dy[min,max]=[-6.0,-6.0]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=14
+     dy=-6.0 dx=-0.0  KISALTMALAR
+     dy=-6.0 dx=-0.0  AIC : Akaike Information Criteria
+     dy=-6.0 dx=-0.0  BHA : Bütillendirilmiş hidroksi anisol
+     dy=-6.0 dx=-0.0  BHT : Bütillendirilmiş hidroksi toluen
+     dy=-6.0 dx=-0.0  DPPH : 1,1-Difenil-2-pikrilhidrazil
+     dy=-6.0 dx=-0.0  FRAP : Ferric Reducing Antioxidant Power
+
+=== Sayfa 16->16  [P|P]  no: W=xiv(y=764.3,x=277.9)  L=xiv(y=764.3,x=276.4)  satir W=0 L=0
+
+=== Sayfa 17->17  [P|P]  no: W=xv(y=764.3,x=320.4)  L=xv(y=764.3,x=318.9)  satir W=20 L=20
+  W ilk: SİMGELER
+  W son: ε : Şekil Değiştirme Tensörü
+  L ilk: SİMGELER
+  L son: ε : Şekil Değiştirme Tensörü
+  - W[113.4,339.3]  : Asal gerilme doğrultusundan sapma açısı
+  - W[113.4,359.9]  : Yoğunluk [Birim]
+  + L[113.4,338.3] α : Asal gerilme doğrultusundan sapma açısı
+  + L[113.4,358.1] ρ : Yoğunluk [Birim]
+  eslesen=18  dy[min,max]=[-2.0,0.0]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=9
+     dy=-1.8 dx=-0.0  D : Çap [Birim]
+     dy=-1.8 dx=-0.0  ρ : Yoğunluk
+     dy=-1.8 dx=-0.0  m : Kütle [Birim]
+     dy=-1.8 dx=-0.0  μ : Dinamik Viskozite
+     dy=-1.8 dx=-0.0  E : Elastisite Modülü
+     dy=-1.8 dx=-0.0  ν : Poisson's Oranı
+
+=== Sayfa 18->18  [P|P]  no: W=xvi(y=764.3,x=277.9)  L=xvi(y=764.3,x=276.4)  satir W=0 L=0
+
+=== Sayfa 19->19  [P|P]  no: W=xvii(y=764.3,x=320.4)  L=xvii(y=764.3,x=318.9)  satir W=11 L=12
+  W ilk: TABLO LİSTESİ
+  W son: Tablo 6.1. Altıncı bölümde bir tablo. ....................................................
+  L ilk: TABLO LİSTESİ
+  L son: Tablo A.1. Ekler bölümünde tablo örneği. .................................................
+  - W[113.4,212.5] Tablo 2.1. Tek satırlı ve kolonlar ortalanmış tablo. .................................................. 11
+  - W[113.4,226.3] Tablo 2.2. Tablo başlığı nokta ile bitirilmelidir. ....................................................... 12
+  - W[113.4,240.1] Tablo 2.3. Düşey sayfada devam eden tablo örneği. ................................................. 12
+  + L[113.4,212.6] Tablo 2.1. Tek satırlı ve kolonlar ortalanmış tablo. ................................................. 11
+  + L[113.4,226.4] Tablo 2.2. Tablo başlığı nokta ile bitirilmelidir. ...................................................... 12
+  + L[113.4,240.2] Tablo 2.3. Düşey sayfada devam eden tablo örneği. ................................................ 12
+  - W[164.4,281.6] tablo adı. ...................................................................................................
+  - W[113.4,295.4] Tablo 4.1. Tablo örneği. .....................................................................................
+  - W[113.4,309.2] Tablo 5.1. Beşinci bölümde örnek tablo. ................................................................... 32
+  - W[113.4,323.0] Tablo 6.1. Altıncı bölümde bir tablo. ........................................................................
+  + L[164.4,281.6] tablo adı. .................................................................................................. 
+  + L[113.4,295.4] Tablo 4.1. Tablo örneği. .....................................................................................
+  + L[113.4,309.3] Tablo 5.1. Beşinci bölümde örnek tablo. ................................................................. 32
+  + L[113.4,323.1] Tablo 6.1. Altıncı bölümde bir tablo. ....................................................................... 
+  + L[113.4,336.9] Tablo A.1. Ekler bölümünde tablo örneği. ............................................................... 45
+  eslesen=4  dy[min,max]=[0.0,0.1]  dx[min,max]=[-0.1,-0.0]  sapma>1pt=0
+
+=== Sayfa 20->20  [P|P]  no: W=xviii(y=764.3,x=278.0)  L=xviii(y=764.3,x=276.4)  satir W=0 L=0
+
+=== Sayfa 21->21  [P|P]  no: W=xix(y=764.3,x=320.4)  L=xix(y=764.3,x=318.9)  satir W=13 L=14
+  W ilk: ŞEKİL LİSTESİ
+  W son: Şekil 6.1. Altıncı bölümde örnek şekil. ..................................................
+  L ilk: ŞEKİL LİSTESİ
+  L son: Şekil A.1. İklim haritaları: (a)Avustralya. (b) Afrika. (c)Antartika. (d). ... ...........
+  - W[164.4,226.3] yerleştirilmelidir. ......................................................................................... 
+  - W[113.4,240.1] Şekil 2.2. Bir satıra sığan şekil başlıkları ortalı olarak yerleştirilmelidir. ................... 7
+  - W[113.4,253.9] Şekil 2.3. Yatay tam sayfa şekil. ............................................................................
+  - W[113.4,267.8] Şekil 3.1. Sinir hücresi, Çetin (2003)'ten uyarlanmıştır. ........................................... 17
+  + L[164.4,226.4] yerleştirilmelidir. ....................................................................................... 6
+  + L[113.4,240.2] Şekil 2.2. Bir satıra sığan şekil başlıkları ortalı olarak yerleştirilmelidir. .................. 7
+  + L[113.4,254.0] Şekil 2.3. Yatay tam sayfa şekil. ............................................................................
+  + L[113.4,267.8] Şekil 3.1. Sinir hücresi, Çetin (2003)'ten uyarlanmıştır. .......................................... 17
+  - W[164.4,295.4] isimlendirmesinde örnek. .......................................................................... 19
+  - W[113.4,309.2] Şekil 3.3. Örnek şekil ismi nokta ile bitirilmelidir. ................................................... 20
+  - W[113.4,323.0] Şekil 4.1. Örnek şekil. ......................................................................................
+  - W[113.4,336.8] Şekil 5.1. Beşinci bölümde örnek şekil. ..................................................................... 
+  - W[113.4,350.6] Şekil 6.1. Altıncı bölümde örnek şekil. ..................................................................... 
+  + L[164.4,295.5] isimlendirmesinde örnek. ........................................................................ 19
+  + L[113.4,309.3] Şekil 3.3. Örnek şekil ismi nokta ile bitirilmelidir. .................................................. 20
+  + L[113.4,323.1] Şekil 4.1. Örnek şekil. ......................................................................................
+  + L[113.4,336.9] Şekil 5.1. Beşinci bölümde örnek şekil. ................................................................... 32
+  + L[113.4,350.7] Şekil 6.1. Altıncı bölümde örnek şekil. .................................................................... 3
+  + L[113.4,364.5] Şekil A.1. İklim haritaları: (a)Avustralya. (b) Afrika. (c)Antartika. (d). ... ............. 44
+  eslesen=4  dy[min,max]=[0.0,0.1]  dx[min,max]=[-0.1,-0.0]  sapma>1pt=0
+
+=== Sayfa 22->22  [P|P]  no: W=xx(y=764.3,x=277.9)  L=xx(y=764.3,x=276.4)  satir W=0 L=0
+
+=== Sayfa 23->23  [P|P]  no: W=xxi(y=764.3,x=320.4)  L=xxi(y=764.3,x=318.9)  satir W=37 L=37
+  W ilk: TÜRKÇE TEZ BAŞLIĞI BURAYA YAZILIR
+  W son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  L ilk: TÜRKÇE TEZ BAŞLIĞI BURAYA YAZILIR
+  L son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  - W[113.4,253.1] 3 sayfa, Türkçe genişletilmiş özet de 3-5 sayfa arasında olmalıdır. Özetlerde tezde
+  - W[113.4,266.9] ele alınan konu kısaca tanıtılarak, kullanılan yöntemler ve ulaşılan sonuçlar
+  + L[113.4,253.2] 3 sayfa, Türkçe genişletilmiş özet de 3-5 sayfa arasında olmalıdır. Özetlerde tezde ele
+  + L[113.4,267.0] alınan konu kısaca tanıtılarak, kullanılan yöntemler ve ulaşılan sonuçlar
+  eslesen=35  dy[min,max]=[0.0,0.5]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 24->24  [P|P]  no: W=xxii(y=764.3,x=277.9)  L=xxii(y=764.3,x=276.4)  satir W=45 L=45
+  W ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  W son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  L ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  L son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  eslesen=45  dy[min,max]=[-0.0,0.5]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=0
+
+=== Sayfa 25->25  [P|P]  no: W=xxiii(y=764.3,x=320.5)  L=xxiii(y=764.3,x=318.9)  satir W=30 L=30
+  W ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  W son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  L ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  L son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  eslesen=30  dy[min,max]=[-0.0,0.2]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 26->26  [P|P]  no: W=xxiv(y=764.3,x=277.9)  L=xxiv(y=764.3,x=276.4)  satir W=0 L=0
+
+=== Sayfa 27->27  [P|P]  no: W=xxv(y=764.3,x=320.4)  L=xxv(y=764.3,x=318.9)  satir W=38 L=38
+  W ilk: THESIS TITLE IN ENGLISH IS WRITTEN HERE
+  W son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  L ilk: THESIS TITLE IN ENGLISH IS WRITTEN HERE
+  L son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  eslesen=38  dy[min,max]=[0.0,0.5]  dx[min,max]=[-0.1,-0.0]  sapma>1pt=0
+
+=== Sayfa 28->28  [P|P]  no: W=xxvi(y=764.3,x=277.9)  L=xxvi(y=764.3,x=276.4)  satir W=45 L=45
+  W ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  W son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  L ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  L son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  eslesen=45  dy[min,max]=[-0.0,0.5]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=0
+
+=== Sayfa 29->29  [P|P]  no: W=xxvii(y=764.3,x=320.4)  L=xxvii(y=764.3,x=318.9)  satir W=40 L=40
+  W ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  W son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  L ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  L son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  eslesen=40  dy[min,max]=[-0.0,0.4]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 30->30  [P|P]  no: W=-(y=0.0,x=0.0)  L=-(y=0.0,x=0.0)  satir W=0 L=0
+
+=== Sayfa 31->31  [P|P]  no: W=-(y=0.0,x=0.0)  L=-(y=0.0,x=0.0)  satir W=26 L=26
+  W ilk: 1. GİRİŞ (BİRİNCİ DERECE BAŞLIK)
+  W son: amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+  L ilk: 1. GİRİŞ (BİRİNCİ DERECE BAŞLIK)
+  L son: amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+  - W[131.4,348.8] Tezin Kapsamı (İkinci Derece Başlık Nasıl: İlk Harfler Büyük, İkinci Derece
+  + L[113.4,348.8] 1.1. Tezin Kapsamı (İkinci Derece Başlık Nasıl: İlk Harfler Büyük, İkinci Derece
+  - W[131.4,509.9] Tezin Amacı
+  + L[113.4,509.9] 1.2. Tezin Amacı
+  eslesen=24  dy[min,max]=[-0.1,0.1]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 32->32  [P|P]  no: W=2(y=743.6,x=277.9)  L=2(y=743.6,x=276.4)  satir W=30 L=30
+  W ilk: 1.2.1. Tezin ikincil amacı
+  W son: kasd gub rgren, no sea takimata sanctus est. Lorem ipsum dolor sit amet, consetetur
+  L ilk: 1.2.1. Tezin ikincil amacı
+  L son: kasd gub rgren, no sea takimata sanctus est. Lorem ipsum dolor sit amet, consetetur
+  eslesen=30  dy[min,max]=[-0.0,0.1]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=0
+
+=== Sayfa 33->33  [P|P]  no: W=3(y=743.6,x=320.4)  L=3(y=743.6,x=318.9)  satir W=30 L=30
+  W ilk: sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore
+  W son: rebum. Stet clita kasd gub rgren, no sea takimata sanctus est.
+  L ilk: sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore
+  L son: rebum. Stet clita kasd gub rgren, no sea takimata sanctus est.
+  - W[131.4,271.7] Literatür Araştırması
+  + L[113.4,271.7] 1.3. Literatür Araştırması
+  eslesen=29  dy[min,max]=[-0.1,0.0]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 34->34  [P|P]  no: W=4(y=743.6,x=277.9)  L=4(y=743.6,x=276.4)  satir W=15 L=15
+  W ilk: Hipotez
+  W son: rgren, no sea takimata sanctus est.
+  L ilk: 1.4. Hipotez
+  L son: rgren, no sea takimata sanctus est.
+  - W[ 88.9, 82.1] Hipotez
+  + L[ 70.9, 82.1] 1.4. Hipotez
+  eslesen=14  dy[min,max]=[-0.0,0.0]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=0
+
+=== Sayfa 35->35  [P|P]  no: W=5(y=743.6,x=320.4)  L=-(y=0.0,x=0.0)  satir W=24 L=24
+  W ilk: 2. ŞEKİL VE TABLOLAR
+  W son: boyutu küçük olarak yazılmalıdır.
+  L ilk: 2. ŞEKİL VE TABLOLAR
+  L son: boyutu küçük olarak yazılmalıdır.
+  - W[131.4,179.9] Şekil Atıflar ve Şekil Örneği
+  + L[113.4,179.9] 2.1. Şekil Atıflar ve Şekil Örneği
+  - W[113.4,404.0] tablo veya şeklin bölüm içindeki sıra numarası olmak üzere numara verilir. Tablo, şekil
+  - W[113.4,424.7] kelimeleri ve numaraları koyu harflerle yazılır ve sonlarına nokta konulmalıdır.
+  + L[113.4,404.0] tablo veya şeklin bölüm içindeki sıra numarası olmak üzere numara verilir. Tablo,
+  + L[113.4,424.7] şekil kelimeleri ve numaraları koyu harflerle yazılır ve sonlarına nokta konulmalıdır.
+  eslesen=21  dy[min,max]=[-0.1,0.1]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 36->36  [P|P]  no: W=6(y=743.6,x=277.9)  L=6(y=743.6,x=276.4)  satir W=18 L=18
+  W ilk: Şekil başlıkları, bir satır aralıklı olarak, başlıktan önce 6 punto (nk), sonra ise 12 pun
+  W son: Tablo ve şekillerde gerekli ise yazı boyutu 8 punto yazı boyutuna kadar küçültülebilir.
+  L ilk: Şekil başlıkları, bir satır aralıklı olarak, başlıktan önce 6 punto (nk), sonra ise 12 pun
+  L son: Tablo ve şekillerde gerekli ise yazı boyutu 8 punto yazı boyutuna kadar küçültülebilir.
+  eslesen=18  dy[min,max]=[-0.0,0.2]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=0
+
+=== Sayfa 37->37  [P|P]  no: W=7(y=743.6,x=320.4)  L=7(y=743.6,x=318.9)  satir W=16 L=16
+  W ilk: Tablolar tezde kullanılan yazı karakteriyle hazırlanır, şekillerde kullanılan yazı
+  W son: dolores et ea rebum. At vero eos et accusam et justo duo dolores et ea rebum.
+  L ilk: Tablolar tezde kullanılan yazı karakteriyle hazırlanır, şekillerde kullanılan yazı
+  L son: dolores et ea rebum. At vero eos et accusam et justo duo dolores et ea rebum.
+  - W[113.4,532.9] At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et
+  - W[113.4,553.5] justo duo dolores et ea rebum. At vero eos et accusam et justo duo dolores et ea rebum.
+  + L[113.4,533.1] At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo
+  + L[113.4,553.8] duo dolores et ea rebum. At vero eos et accusam et justo duo dolores et ea rebum.
+  eslesen=14  dy[min,max]=[-0.0,0.2]  dx[min,max]=[-0.0,0.0]  sapma>1pt=0
+
+=== Sayfa 38->38  [P|P]  no: W=8(y=743.6,x=277.9)  L=8(y=743.6,x=276.4)  satir W=15 L=15
+  W ilk: Yatay Sayfada Şekil Örneği
+  W son: voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+  L ilk: 2.2. Yatay Sayfada Şekil Örneği
+  L son: voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+  - W[ 88.9, 82.1] Yatay Sayfada Şekil Örneği
+  + L[ 70.9, 82.1] 2.2. Yatay Sayfada Şekil Örneği
+  eslesen=14  dy[min,max]=[-0.0,0.1]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=0
+
+=== Sayfa 39->39  [L|L]  no: W=-(y=0.0,x=0.0)  L=9(y=777.6,x=318.9)  satir W=3 L=1
+  W ilk: 9
+  W son: 9
+  L ilk: Şekil 2.3. Yatay tam sayfa şekil.
+  L son: Şekil 2.3. Yatay tam sayfa şekil.
+  - W[ 78.0,266.2] 9
+  - W[418.0,517.7] 9
+  eslesen=1  dy[min,max]=[61.2,61.2]  dx[min,max]=[84.2,84.2]  sapma>1pt=1
+     dy=+61.2 dx=+84.2  Şekil 2.3. Yatay tam sayfa şekil.
+
+=== Sayfa 40->40  [P|P]  no: W=10(y=791.0,x=277.9)  L=10(y=791.0,x=276.4)  satir W=31 L=31
+  W ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  W son: başlığı ile tablonun tamamı aynı sayfa içinde yer almalıdır.
+  L ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  L son: başlığı ile tablonun tamamı aynı sayfa içinde yer almalıdır.
+  - W[ 88.9,327.8] Tablo Atıfları ve Tablo Örneği
+  + L[ 70.9,327.8] 2.3. Tablo Atıfları ve Tablo Örneği
+  eslesen=30  dy[min,max]=[-0.1,0.0]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=0
+
+=== Sayfa 41->41  [P|P]  no: W=11(y=791.0,x=320.4)  L=11(y=791.0,x=318.9)  satir W=27 L=27
+  W ilk: Tablodan sonra gelen metin bölümündeki ilk paragraf üstten 12 punto (nk) ve alttan 6
+  W son: eos et accusam et justo duo dolores et ea rebum.
+  L ilk: Tablodan sonra gelen metin bölümündeki ilk paragraf üstten 12 punto (nk) ve alttan 6
+  L son: eos et accusam et justo duo dolores et ea rebum.
+  - W[113.4,401.9] sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+  - W[113.4,422.6] sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+  - W[113.4,443.3] kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur
+  + L[113.4,401.9] sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+  + L[113.4,422.6] diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+  + L[113.4,443.3] gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur
+  eslesen=24  dy[min,max]=[-0.1,1.4]  dx[min,max]=[-1.7,-0.0]  sapma>1pt=4
+     dy=+1.4 dx=-1.6  Kolon A Kolon B Kolon C Kolon D
+     dy=+1.1 dx=-1.7  Satır A Satır A Satır A Satır A
+     dy=+1.2 dx=-1.6  Satır B Satır B Satır B Satır B
+     dy=+1.1 dx=-1.6  Satır C Satır C Satır C Satır C
+
+=== Sayfa 42->42  [P|P]  no: W=12(y=791.0,x=277.9)  L=12(y=791.0,x=276.4)  satir W=31 L=32
+  W ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  W son: Satır 5 37.174357 37.16192697 0.00 0.00 0.00
+  L ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  L son: Satır 5 37.174357 37.16192697 0.00 0.00 0.00
+  - W[319.5,668.5] kolon kolon kolon
+  + L[359.7,663.4] kolon kolon
+  + L[319.4,666.1] kolon
+  eslesen=30  dy[min,max]=[-9.1,1.5]  dx[min,max]=[-1.6,5.9]  sapma>1pt=12
+     dy=+1.5 dx=-1.6  Kolon A Kolon B Kolon C Kolon D
+     dy=+1.2 dx=-1.6  Satır A Satır A Satır A Satır A
+     dy=+1.2 dx=-1.5  Satır B Satır B Satır B Satır B
+     dy=+1.2 dx=-1.5  Satır C Satır C Satır C Satır C
+     dy=-4.3 dx=-1.1  Kolon 4
+     dy=-9.1 dx=-1.2  Parametre Kolon 2 Kolon 3
+
+=== Sayfa 43->43  [P|P]  no: W=13(y=791.0,x=320.4)  L=13(y=791.0,x=318.9)  satir W=26 L=27
+  W ilk: Tablo 2.3. (Devamı) Düşey sayfada devam eden tablo örneği.
+  W son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  L ilk: Tablo 2.3. (Devamı) Düşey sayfada devam eden tablo örneği.
+  L son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  - W[362.0,146.4] kolon kolon kolon
+  + L[402.2,140.9] kolon kolon
+  + L[361.9,143.6] kolon
+  - W[131.4,493.9] Yatay Sayfada Tablo Örneği
+  + L[113.4,489.7] 2.4. Yatay Sayfada Tablo Örneği
+  eslesen=24  dy[min,max]=[-9.5,0.0]  dx[min,max]=[-1.2,5.9]  sapma>1pt=23
+     dy=-4.7 dx=-1.1  Kolon 4
+     dy=-9.5 dx=-1.2  Parametre Kolon 2 Kolon 3
+     dy=-5.5 dx=+5.9  Alt Alt Alt
+     dy=-3.2 dx=-1.2  Satır 1 -7.680442 7.6986348 0.00 0.00 0.00
+     dy=-3.2 dx=-1.2  Satır 2 140 - 0.50 0.00 0.00
+     dy=-3.2 dx=-1.2  Satır 3 37.174357 37.16192697 0.00 0.00 0.00
+
+=== Sayfa 44->44  [L|L]  no: W=14(y=544.4,x=422.5)  L=14(y=777.6,x=318.9)  satir W=21 L=10
+  W ilk: Tablo 2.4. 2. Satıra geçen örnek tablo adı, 2. Satıra geçen örnek tablo adı, 2. Satıra geç
+  W son: Satır 15 37.174357 37.16192697 0.00 0.00 0.00 0 24
+  L ilk: Alt kolon 12 0 24 0 24 0 24 0 24 0 24 0 24 0 24
+  L son: Tablo 2.4. 2. Satıra geçen örnek tablo adı, 2. Satıra geçen örnek tablo adı, 2. Satıra geç
+  + L[131.7,159.5] Alt kolon 12 0 24 0 24 0 24 0 24 0 24 0 24 0 24
+  + L[112.4,238.9] Kolon 5 Alt kolon 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  + L[131.7,318.3] Alt kolon 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+  + L[131.7,397.8] Alt kolon 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+  + L[112.4,477.3] Kolon 4 Alt kolon 0.00 0.50 0.00 0.50 0.00 0.50 0.00 0.50 0.00 0.50 0.00 0.50 0.00 0.50 0.00
+  + L[117.9,581.0] Kolon 3 7.6986348 - 37.16192697 - 37.16192697 - 37.16192697 - 37.16192697 - 37.16192697 - 37.16192697 - 37.161
+  + L[117.9,667.9] Kolon 2 -7.680442 140 37.174357 140 37.174357 140 37.174357 140 37.174357 140 37.174357 140 37.174357 140 37.1
+  + L[ 86.7,718.8] geçen örnek tablo adı.
+  + L[117.7,751.3] Parametre Satır 1 Satır 2 Satır 3 Satır 4 Satır 5 Satır 6 Satır 7 Satır 8 Satır 9 Satır 10 Satır 11 Satır 12 S
+  - W[120.6,144.4] geçen örnek tablo adı.
+  - W[364.5,174.8] Kolon 4 Kolon 5
+  - W[ 90.5,180.8] Parametre Kolon 2 Kolon 3
+  - W[364.5,195.1] Alt kolon Alt kolon Alt kolon Alt kolon Alt kolon
+  - W[ 90.5,218.2] Satır 1 -7.680442 7.6986348 0.00 0.00 0.00 12 12
+  - W[ 90.5,237.6] Satır 2 140 - 0.50 0.00 0.00 0 0
+  - W[ 90.5,257.1] Satır 3 37.174357 37.16192697 0.00 0.00 0.00 0 24
+  - W[ 90.5,276.6] Satır 4 140 - 0.50 0.00 0.00 0 0
+  - W[ 90.5,296.1] Satır 5 37.174357 37.16192697 0.00 0.00 0.00 0 24
+  - W[ 61.7,311.1] 14
+  - W[ 90.5,315.6] Satır 6 140 - 0.50 0.00 0.00 0 0
+  - W[ 90.5,335.0] Satır 7 37.174357 37.16192697 0.00 0.00 0.00 0 24
+  - W[ 90.5,354.4] Satır 8 140 - 0.50 0.00 0.00 0 0
+  - W[ 90.5,373.6] Satır 9 37.174357 37.16192697 0.00 0.00 0.00 0 24
+  - W[ 90.5,393.1] Satır 10 140 - 0.50 0.00 0.00 0 0
+  - W[ 90.5,412.5] Satır 11 37.174357 37.16192697 0.00 0.00 0.00 0 24
+  - W[ 90.5,432.0] Satır 12 140 - 0.50 0.00 0.00 0 0
+  - W[ 90.5,451.5] Satır 13 37.174357 37.16192697 0.00 0.00 0.00 0 24
+  - W[ 90.5,471.0] Satır 14 140 - 0.50 0.00 0.00 0 0
+  - W[ 90.5,490.4] Satır 15 37.174357 37.16192697 0.00 0.00 0.00 0 24
+  eslesen=1  dy[min,max]=[637.9,637.9]  dx[min,max]=[2.0,2.0]  sapma>1pt=1
+     dy=+637.9 dx=+2.0  Tablo 2.4. 2. Satıra geçen örnek tablo adı, 2. Sat
+
+=== Sayfa 45->45  [L|L]  no: W=15(y=544.4,x=422.5)  L=15(y=777.6,x=318.9)  satir W=14 L=10
+  W ilk: Table 2.4. (Devamı) 2. Satıra geçen örnek tablo adı, 2. Satıra geçen örnek tablo adı, 2. S
+  W son: Satır 23 140 - 0.50 0.00 0.00 0 0
+  L ilk: Alt kolon 12 0 24 0 24 0 24 0
+  L son: Tablo 2.4. (Devamı) 2. Satıra geçen örnek tablo adı, 2. Satıra geçen örnek tablo adı, 2. S
+  - W[ 70.9,124.6] Table 2.4. (Devamı) 2. Satıra geçen örnek tablo adı, 2. Satıra geçen örnek tablo adı, 2. Satıra geçen örnek ta
+  - W[119.2,138.4] adı, 2. Satıra geçen örnek tablo adı.
+  - W[367.2,167.6] Kolon 4 Kolon 5
+  - W[105.3,178.6] Parametre Kolon 2 Kolon 3
+  - W[367.2,192.5] Alt kolon Alt kolon Alt kolon Alt kolon Alt kolon
+  - W[105.3,223.6] Satır 16 -7.680442 7.6986348 0.00 0.00 0.00 12 12
+  - W[105.3,247.6] Satır 17 140 - 0.50 0.00 0.00 0 0
+  - W[105.3,271.7] Satır 18 37.174357 37.16192697 0.00 0.00 0.00 0 24
+  - W[ 70.0,284.7] 15
+  - W[105.3,295.9] Satır 19 140 - 0.50 0.00 0.00 0 0
+  - W[105.3,320.0] Satır 20 37.174357 37.16192697 0.00 0.00 0.00 0 24
+  - W[105.3,344.1] Satır 21 140 - 0.50 0.00 0.00 0 0
+  - W[105.3,368.2] Satır 22 37.174357 37.16192697 0.00 0.00 0.00 0 24
+  - W[105.3,392.3] Satır 23 140 - 0.50 0.00 0.00 0 0
+  + L[174.3,170.7] Alt kolon 12 0 24 0 24 0 24 0
+  + L[155.0,246.7] Kolon 5 Alt kolon 12 0 0 0 0 0 0 0
+  + L[174.3,322.6] Alt kolon 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+  + L[174.3,398.6] Alt kolon 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+  + L[155.0,474.5] Kolon 4 Alt kolon 0.00 0.50 0.00 0.50 0.00 0.50 0.00 0.50
+  + L[160.4,573.7] Kolon 3 7.6986348 - 37.16192697 - 37.16192697 - 37.16192697 -
+  + L[160.4,656.7] Kolon 2 -7.680442 140 37.174357 140 37.174357 140 37.174357 140
+  + L[129.3,718.8] 2. Satıra geçen örnek tablo adı.
+  + L[160.2,736.5] Parametre Satır 16 Satır 17 Satır 18 Satır 19 Satır 20 Satır 21 Satır 22 Satır 23
+  + L[115.5,768.4] Tablo 2.4. (Devamı) 2. Satıra geçen örnek tablo adı, 2. Satıra geçen örnek tablo adı, 2. Satıra geçen örnek ta
+
+=== Sayfa 46->46  [P|P]  no: W=-(y=0.0,x=0.0)  L=-(y=0.0,x=0.0)  satir W=17 L=17
+  W ilk: 3. METİNLER
+  W son: justo duo dolores et ea rebum (Şekil 3.1).
+  L ilk: 3. METİNLER
+  L son: justo duo dolores et ea rebum (Şekil 3.1).
+  - W[ 88.9,179.9] Gövde Metinleri
+  + L[ 70.9,179.9] 3.1. Gövde Metinleri
+  - W[ 88.9,436.7] Sayfa Kenar Boşlukları
+  + L[ 70.9,436.7] 3.2. Sayfa Kenar Boşlukları
+  eslesen=15  dy[min,max]=[-0.0,0.1]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=0
+
+=== Sayfa 47->47  [P|P]  no: W=17(y=791.0,x=320.4)  L=17(y=791.0,x=318.9)  satir W=19 L=19
+  W ilk: Şekil 3.1. Sinir hücresi, Çetin (2003)'ten uyarlanmıştır.
+  W son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  L ilk: Şekil 3.1. Sinir hücresi, Çetin (2003)'ten uyarlanmıştır.
+  L son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  eslesen=19  dy[min,max]=[-0.1,0.0]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 48->48  [P|P]  no: W=18(y=791.0,x=277.9)  L=18(y=791.0,x=276.4)  satir W=28 L=28
+  W ilk: Denklemler
+  W son: eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea
+  L ilk: 3.3. Denklemler
+  L son: eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea
+  - W[ 88.9, 82.1] Denklemler
+  + L[ 70.9, 82.1] 3.3. Denklemler
+  eslesen=27  dy[min,max]=[-0.0,0.4]  dx[min,max]=[-0.1,31.9]  sapma>1pt=2
+     dy=+0.0 dx=+31.9  φ = ω −βk+1 (3.1)
+     dy=+0.2 dx=+31.2  limn→∞S(xn, xn, xn+1) = 0 (3.2)
+
+=== Sayfa 49->49  [P|P]  no: W=19(y=791.0,x=320.4)  L=19(y=791.0,x=318.9)  satir W=23 L=25
+  W ilk: takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+  W son: ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+  L ilk: takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+  L son: sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+  - W[113.4,728.5] dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+  - W[113.4,749.3] ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+  + L[113.4,701.9] dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+  + L[113.4,722.6] labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+  + L[113.4,743.3] justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+  + L[113.4,764.0] sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+  eslesen=21  dy[min,max]=[-26.7,0.1]  dx[min,max]=[-0.1,0.1]  sapma>1pt=7
+     dy=-26.6 dx=-0.0  3.3.1.1. Dördüncü derece başlık örneği dördüncü de
+     dy=-26.6 dx=+0.1  derece başlık örneği
+     dy=-26.7 dx=-0.0  Lorem ipsum dolor sit amet, consetetur sadipscing 
+     dy=-26.6 dx=-0.0  tempor invidunt ut labore et dolore magna aliquyam
+     dy=-26.7 dx=-0.0  eos et accusam et justo duo dolores et ea rebum. S
+     dy=-26.6 dx=-0.0  takimata sanctus est Lorem ipsum dolor sit amet, c
+
+=== Sayfa 50->50  [P|P]  no: W=20(y=791.0,x=277.9)  L=20(y=791.0,x=276.4)  satir W=19 L=19
+  W ilk: justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+  W son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+  L ilk: diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum
+  L son: tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+  - W[ 70.9, 82.1] justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+  - W[ 70.9,102.7] sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+  - W[ 70.9,123.5] sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem
+  - W[ 70.9,144.1] ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+  - W[ 70.9,164.9] invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+  - W[ 70.9,185.5] accusam et justo duo dolores et ea rebum.
+  + L[ 70.9, 82.1] diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum
+  + L[ 70.9,102.8] dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+  + L[ 70.9,123.5] labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+  + L[ 70.9,144.2] justo duo dolores et ea rebum.
+  - W[ 88.9,639.2] İleri Arıtma Metotları
+  + L[ 70.9,598.1] 3.4. İleri Arıtma Metotları
+  + L[ 70.9,733.4] Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  + L[ 70.9,754.1] tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+  eslesen=12  dy[min,max]=[-41.7,-41.1]  dx[min,max]=[-0.1,27.2]  sapma>1pt=12
+     dy=-41.4 dx=+0.0  Şekil 3.3. Örnek şekil ismi nokta ile bitirilmelid
+     dy=-41.7 dx=+27.2  u∆= g(t, u) (3.3)
+     dy=-41.2 dx=-0.1  Lorem ipsum dolor sit amet, consetetur sadipscing 
+     dy=-41.1 dx=-0.1  tempor invidunt ut labore et dolore magna aliquyam
+     dy=-41.2 dx=-0.1  ipsum dolor sit amet, consetetur sadipscing elitr,
+     dy=-41.1 dx=-0.1  invidunt ut labore et dolore magna aliquyam erat, 
+
+=== Sayfa 51->51  [P|P]  no: W=21(y=791.0,x=320.4)  L=21(y=791.0,x=318.9)  satir W=31 L=31
+  W ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  W son: nonumy eirmod tempor invidunt ut lab ore sit et dolore magna (Nelson, 1988).
+  L ilk: eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea
+  L son: tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+  - W[113.4, 82.1] Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  - W[113.4,102.7] tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+  - W[131.4,422.6] Deneysel Çalışmalar
+  + L[113.4,381.2] 3.5. Deneysel Çalışmalar
+  + L[113.4,735.5] Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  + L[113.4,756.2] tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+  eslesen=28  dy[min,max]=[-41.5,-41.4]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=28
+     dy=-41.4 dx=-0.0  eos et accusam et justo duo dolores et ea rebum. S
+     dy=-41.4 dx=-0.0  takimata sanctus est Lorem ipsum dolor sit amet, c
+     dy=-41.4 dx=-0.0  nonumy eirmod tempor invidunt ut lab ore sit et do
+     dy=-41.4 dx=-0.0  Lorem ipsum dolor sit amet, consetetur sadipscing 
+     dy=-41.4 dx=-0.0  tempor invidunt ut labore et dolore magna aliquyam
+     dy=-41.4 dx=-0.0  eos et accusam et justo duo dolores et ea rebum. S
+
+=== Sayfa 52->52  [P|P]  no: W=22(y=791.0,x=277.9)  L=22(y=791.0,x=276.4)  satir W=5 L=3
+  W ilk: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  W son: dolore magna aliquyam erat, sed diam voluptua.
+  L ilk: eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet,
+  L son: dolore magna aliquyam erat, sed diam voluptua.
+  - W[ 70.9, 82.1] Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  - W[ 70.9,102.7] tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+  eslesen=3  dy[min,max]=[-41.4,-41.4]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=3
+     dy=-41.4 dx=-0.1  eos et accusam et justo duo dolores et ea rebum. L
+     dy=-41.4 dx=-0.1  consetetur sadipscing elitr, sed diam nonumy eirmo
+     dy=-41.4 dx=-0.1  dolore magna aliquyam erat, sed diam voluptua.
+
+=== Sayfa 53->53  [P|P]  no: W=-(y=0.0,x=0.0)  L=-(y=0.0,x=0.0)  satir W=25 L=25
+  W ilk: 4. ATIFLAR, ALINTILAR VE DİPNOTLAR
+  W son: Kaynaklar bölümünde künyeler yazar soyadına göre sıralanır.
+  L ilk: 4. ATIFLAR, ALINTILAR VE DİPNOTLAR
+  L son: Kaynaklar bölümünde künyeler yazar soyadına göre sıralanır.
+  - W[131.4,239.3] Atıflar (kaynakların metin içinde gösterimi)
+  + L[113.4,239.3] 4.1. Atıflar (kaynakların metin içinde gösterimi)
+  eslesen=24  dy[min,max]=[-0.1,0.1]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 54->54  [P|P]  no: W=24(y=791.0,x=277.9)  L=24(y=791.0,x=276.4)  satir W=30 L=30
+  W ilk: 4.1.2. Numara ile atıf verme
+  W son: listeye girer.
+  L ilk: 4.1.2. Numara ile atıf verme
+  L son: listeye girer.
+  - W[ 70.9,649.1] Aynı yazarın tek yazarlı eserleri çok yazarlı eserlerinden önce sıralanır. Çok yazarlı
+  - W[ 70.9,669.8] iki eserin ilk yazarları aynıysa, ikinci yazarın soyadı, ikinci yazarlar da aynıysa üçüncü
+  + L[ 70.9,649.1] Aynı yazarın tek yazarlı eserleri çok yazarlı eserlerinden önce sıralanır. Çok yazarlı iki
+  + L[ 70.9,669.8] eserin ilk yazarları aynıysa, ikinci yazarın soyadı, ikinci yazarlar da aynıysa üçüncü
+  eslesen=28  dy[min,max]=[-0.1,0.0]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=0
+
+=== Sayfa 55->55  [P|P]  no: W=25(y=791.0,x=320.4)  L=25(y=791.0,x=318.9)  satir W=30 L=30
+  W ilk: Bir eserin yazarı veya editörü yoksa künye eser adına hazırlanacağı için, kaynak, eser
+  W son: ana metin ana metin. Bu görüşe karşı olan bazı çalışmalarda bulunmaktadır:
+  L ilk: Bir eserin yazarı veya editörü yoksa künye eser adına hazırlanacağı için, kaynak, eser
+  L son: metin ana metin. Bu görüşe karşı olan bazı çalışmalarda bulunmaktadır:
+  - W[131.4,425.9] Alıntılar
+  + L[113.4,425.9] 4.2. Alıntılar
+  - W[113.4,744.8] Ana metin ana metin ana metin ana metin ana metin ana metin ana metin ana metin
+  - W[113.4,765.5] ana metin ana metin. Bu görüşe karşı olan bazı çalışmalarda bulunmaktadır:
+  + L[113.4,744.8] Ana metin ana metin ana metin ana metin ana metin ana metin ana metin ana metin ana
+  + L[113.4,765.5] metin ana metin. Bu görüşe karşı olan bazı çalışmalarda bulunmaktadır:
+  eslesen=27  dy[min,max]=[-0.1,0.0]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 56->56  [P|P]  no: W=26(y=791.0,x=277.9)  L=26(y=791.0,x=276.4)  satir W=33 L=32
+  W ilk: Bilim, araştırma ve geliştirme faaliyetleri ekonomik kalkınma ve sosyal gelişmenin
+  W son: Cümle arasındaki kısa alıntı örneği;
+  L ilk: Bilim, araştırma ve geliştirme faaliyetleri ekonomik kalkınma ve sosyal gelişmenin
+  L son: Cümle arasındaki kısa alıntı örneği;
+  - W[ 70.9,605.3] Ertürk (1998) eğitimi, "bireyin davranışlarında kendi yaşantısı yoluyla ve kasıtlı olarak
+  - W[ 70.9,626.0] istendik değişiklik meydana getirme süreci" olarak tanımlamaktadır (Ertürk, 1998,
+  - W[ 70.9,646.7] 12).
+  - W[ 70.9,667.4] Bilimi çeşitli şekillerde tanımlamak mümkündür. Örneğin, Yıldırım (1991) bilimi
+  - W[ 70.9,688.1] "dünyamızda olup biten olguları ‘betimleme ve açıklama' yoluyla anlama girişimidir"
+  - W[ 70.9,708.8] şeklinde tanımlıyor (s. 95).
+  + L[ 70.9,607.2] Ertürk (1998) eğitimi, "bireyin davranışlarında kendi yaşantısı yoluyla ve kasıtlı
+  + L[ 70.9,627.9] olarak istendik değişiklik meydana getirme süreci" olarak tanımlamaktadır (Ertürk,
+  + L[ 70.9,648.6] 1998, 12).Bilimi çeşitli şekillerde tanımlamak mümkündür. Örneğin, Yıldırım (1991)
+  + L[ 70.9,669.3] bilimi "dünyamızda olup biten olguları ‘betimleme ve açıklama' yoluyla anlama
+  + L[ 70.9,690.0] girişimidir" şeklinde tanımlıyor (s. 95).
+  eslesen=27  dy[min,max]=[-18.8,1.9]  dx[min,max]=[-0.1,-0.1]  sapma>1pt=27
+     dy=+1.8 dx=-0.1  Bilim, araştırma ve geliştirme faaliyetleri ekonom
+     dy=+1.8 dx=-0.1  gerçekleşmesinde etkin araçlar olarak belirmektedi
+     dy=+1.8 dx=-0.1  üretim ve karar verme mekanizmalarına olan etkiler
+     dy=+1.8 dx=-0.1  alanda kendini belli etmektedir. Oysa az gelişmiş 
+     dy=+1.8 dx=-0.1  (Eryaman, 1973, 685)
+     dy=+1.8 dx=-0.1  Betimleme yöntemi, Kaptan (1995) tarafından şu biç
+
+=== Sayfa 57->57  [P|P]  no: W=27(y=791.0,x=320.4)  L=27(y=791.0,x=318.9)  satir W=26 L=30
+  W ilk: Bu sonuçları yorumlarken, Robbins ve ark. (2003) "terapistler, bırakılma durumda
+  W son: bilgiler zorunlulukla kaynak içeriyorsa bu kaynak mutlaka kaynaklar bölümünde verilmelidir
+  L ilk: Bu sonuçları yorumlarken, Robbins ve ark. (2003) "terapistler, bırakılma durumda
+  L son: bilgiler zorunlulukla kaynak içeriyorsa bu kaynak mutlaka kaynaklar bölümünde verilmelidir
+  - W[131.4,277.7] Dipnotlar
+  + L[113.4,277.7] 4.3. Dipnotlar
+  + L[113.4,641.3] 4.4. İkinci Derece Başlık Nasıl: İlk Harfler Büyük
+  + L[113.4,667.1] Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  + L[113.4,687.8] tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+  + L[113.4,708.5] eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea
+  eslesen=25  dy[min,max]=[-0.1,20.5]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=3
+     dy=+20.5 dx=-0.0  1 Dipnotlar ile kaynak gösterimi yapılmaz. Dipnotl
+     dy=+15.9 dx=-0.0  ilave nitelikteki bilgileri vermek için kullanılır
+     dy=+11.3 dx=-0.0  bilgiler zorunlulukla kaynak içeriyorsa bu kaynak 
+
+=== Sayfa 58->58  [P|P]  no: W=28(y=791.0,x=277.9)  L=28(y=791.0,x=276.4)  satir W=20 L=16
+  W ilk: İkinci Derece Başlık Nasıl: İlk Harfler Büyük
+  W son: dolore magna.
+  L ilk: 4.4.1. Üçüncü derece başlık nasıl: ilk harf büyük diğerleri küçük
+  L son: dolore magna.
+  - W[ 88.9, 82.1] İkinci Derece Başlık Nasıl: İlk Harfler Büyük
+  - W[ 70.9,107.9] Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  - W[ 70.9,128.5] tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+  - W[ 70.9,149.3] eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea
+  eslesen=16  dy[min,max]=[-99.9,-99.8]  dx[min,max]=[-0.1,-0.0]  sapma>1pt=16
+     dy=-99.9 dx=-0.1  4.4.1. Üçüncü derece başlık nasıl: ilk harf büyük 
+     dy=-99.8 dx=-0.1  Lorem ipsum dolor sit amet, consetetur sadipscing 
+     dy=-99.9 dx=-0.1  tempor invidunt ut labore et dolore magna aliquyam
+     dy=-99.8 dx=-0.1  eos et accusam et justo duo dolores et ea rebum. S
+     dy=-99.9 dx=-0.1  4.4.1.1. Dördüncü derece başlık nasıl: ilk harf bü
+     dy=-99.9 dx=-0.1  Stet clita kasd gub rgren, no sea takimata sanctus
+
+=== Sayfa 59->59  [P|P]  no: W=29(y=791.0,x=320.4)  L=29(y=791.0,x=318.9)  satir W=13 L=13
+  W ilk: Tablo 4.1. Tablo örneği.
+  W son: dolore magna.
+  L ilk: Tablo 4.1. Tablo örneği.
+  L son: dolore magna.
+  eslesen=13  dy[min,max]=[0.0,1.4]  dx[min,max]=[-1.6,-0.0]  sapma>1pt=4
+     dy=+1.4 dx=-1.5  Kolon A Kolon B Kolon C Kolon D
+     dy=+1.2 dx=-1.6  Satır A Satır A Satır A Satır A
+     dy=+1.2 dx=-1.5  Satır B Satır B Satır B Satır B
+     dy=+1.2 dx=-1.5  Satır C Satır C Satır C Satır C
+
+=== Sayfa 60->60  [P|P]  no: W=30(y=791.0,x=277.9)  L=30(y=791.0,x=276.4)  satir W=0 L=0
+
+=== Sayfa 61->61  [P|P]  no: W=31(y=791.0,x=320.4)  L=-(y=0.0,x=0.0)  satir W=24 L=24
+  W ilk: 5. GEREKLİ İSE BÖLÜM BAŞLIĞI
+  W son: tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+  L ilk: 5. GEREKLİ İSE BÖLÜM BAŞLIĞI
+  L son: tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+  - W[131.4,307.4] Deney Sonuçlar
+  + L[113.4,301.4] 5.1. Deney Sonuçlar
+  - W[131.4,392.6] İkinci Derece Başlık Nasıl: İlk Harfler Büyük
+  + L[113.4,386.6] 5.2. İkinci Derece Başlık Nasıl: İlk Harfler Büyük
+  eslesen=22  dy[min,max]=[-6.0,-5.9]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=22
+     dy=-6.0 dx=-0.0  5. GEREKLİ İSE BÖLÜM BAŞLIĞI
+     dy=-6.0 dx=-0.0  Lorem ipsum dolor sit amet, consetetur sadipscing 
+     dy=-5.9 dx=-0.0  tempor invidunt ut labore et dolore magna aliquyam
+     dy=-6.0 dx=-0.0  eos et accusam et justo duo dolores et ea rebum. S
+     dy=-5.9 dx=-0.0  takimata sanctus est Lorem ipsum dolor sit amet, c
+     dy=-6.0 dx=-0.0  nonumy eirmod tempor invidunt ut lab ore sit et do
+
+=== Sayfa 62->62  [P|P]  no: W=32(y=791.0,x=277.9)  L=32(y=791.0,x=276.4)  satir W=19 L=19
+  W ilk: Şekil 5.1. Beşinci bölümde örnek şekil.
+  W son: ore sit et dolore magna.
+  L ilk: Şekil 5.1. Beşinci bölümde örnek şekil.
+  L son: ore sit et dolore magna.
+  eslesen=19  dy[min,max]=[0.1,1.6]  dx[min,max]=[-1.6,-0.0]  sapma>1pt=4
+     dy=+1.6 dx=-1.6  Kolon A Kolon B Kolon C Kolon D
+     dy=+1.3 dx=-1.6  Satır A Satır A Satır A Satır A
+     dy=+1.4 dx=-1.5  Satır B Satır B Satır B Satır B
+     dy=+1.3 dx=-1.5  Satır C Satır C Satır C Satır C
+
+=== Sayfa 63->63  [P|P]  no: W=33(y=791.0,x=320.4)  L=-(y=0.0,x=0.0)  satir W=24 L=24
+  W ilk: 6. SONUÇ VE ÖNERİLER
+  W son: dolore magna.
+  L ilk: 6. SONUÇ VE ÖNERİLER
+  L son: dolore magna.
+  - W[131.4,301.4] Teorik Modeller
+  + L[113.4,301.4] 6.1. Teorik Modeller
+  - W[131.4,448.7] İkinci Derece Başlık Nasıl: İlk Harfler Büyük
+  + L[113.4,448.7] 6.2. İkinci Derece Başlık Nasıl: İlk Harfler Büyük
+  eslesen=22  dy[min,max]=[-0.1,0.1]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 64->64  [P|P]  no: W=34(y=791.0,x=277.9)  L=34(y=791.0,x=276.4)  satir W=19 L=19
+  W ilk: Şekil 6.1. Altıncı bölümde örnek şekil.
+  W son: dolore magna.
+  L ilk: Şekil 6.1. Altıncı bölümde örnek şekil.
+  L son: dolore magna.
+  eslesen=19  dy[min,max]=[0.1,1.6]  dx[min,max]=[-1.6,0.0]  sapma>1pt=4
+     dy=+1.6 dx=-1.6  Kolon A Kolon B Kolon C Kolon D
+     dy=+1.3 dx=-1.6  Satır A Satır A Satır A Satır A
+     dy=+1.4 dx=-1.5  Satır B Satır B Satır B Satır B
+     dy=+1.3 dx=-1.5  Satır C Satır C Satır C Satır C
+
+=== Sayfa 65->65  [P|P]  no: W=35(y=791.0,x=320.4)  L=35(y=791.0,x=318.9)  satir W=27 L=27
+  W ilk: KAYNAKLAR
+  W son: Metin içi kullanımı:
+  L ilk: KAYNAKLAR
+  L son: Metin içi kullanımı:
+  eslesen=27  dy[min,max]=[-0.1,0.1]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 66->66  [P|P]  no: W=36(y=791.0,x=277.9)  L=36(y=791.0,x=276.4)  satir W=37 L=38
+  W ilk: Baran (aktaran Çoruhlu, 2015) 1945' te ...
+  W son: Yazarın soyadı, Yazarın adının baş harfi. (Yıl). Kitabın adı (Baskı Sayısı). Yayınevi.
+  L ilk: Baran (aktaran Çoruhlu, 2015) 1945' te ...
+  L son: [Metin içinde atıf: (Jackson, 2019; Tarhan, 2017; Wolfe ve ark., 2015)]
+  - W[ 70.9,288.8] Sapolsky, R. M. (2017). Behave: The biology of humans at our best and worst. Penguin
+  - W[106.3,302.6] Books.
+  + L[ 70.9,262.1] Sapolsky, R. M. (2017). Behave: The biology of humans at our best and worst.
+  + L[106.3,276.0] Penguin Books.
+  - W[ 70.9,690.2] Luck, S. J. (2014). A Broad Overview of the Event-Related Potential Technique. In
+  - W[106.3,704.0] An introduction to event related potential technique (2nd ed., pp. 1-34). The
+  - W[106.3,717.8] MIT Press.
+  + L[ 70.9,663.7] Luck, S. J. (2014). A Broad Overview of the Event-Related Potential Technique. In An
+  + L[106.3,677.5] introduction to event related potential technique (2nd ed., pp. 1-34). The MIT
+  + L[106.3,691.3] Press.
+  + L[ 70.9,750.7] [Metin içinde atıf: (Jackson, 2019; Tarhan, 2017; Wolfe ve ark., 2015)]
+  eslesen=32  dy[min,max]=[-26.7,0.0]  dx[min,max]=[-0.1,-0.0]  sapma>1pt=31
+     dy=-26.7 dx=-0.1  APA 7 formatına göre kaynakça yazım örnekleri
+     dy=-26.7 dx=-0.1  KİTAP
+     dy=-26.7 dx=-0.1  Kitap: Tek yazarlı
+     dy=-26.6 dx=-0.1  Yazarın soyadı, Yazarın adının baş harfi. (Yıl). K
+     dy=-26.6 dx=-0.1  [Metin içinde atıf: (Jackson, 2019; Sapolsky, 2017
+     dy=-26.6 dx=-0.1  Jackson, L. M. (2019). The psychology of prejudice
+
+=== Sayfa 67->67  [P|P]  no: W=37(y=791.0,x=320.4)  L=37(y=791.0,x=318.9)  satir W=40 L=40
+  W ilk: [Metin içinde atıf: (Jackson, 2019; Tarhan, 2017; Wolfe ve ark., 2015)]
+  W son: eserin yayın tarihi )
+  L ilk: Jackson, L. M. (2019). The psychology of prejudice: From attitudes to social action
+  L son: [Metin içinde atıf: (Arasteh, 2000)]
+  - W[113.4, 82.1] [Metin içinde atıf: (Jackson, 2019; Tarhan, 2017; Wolfe ve ark., 2015)]
+  + L[113.4,752.6] [Metin içinde atıf: (Arasteh, 2000)]
+  eslesen=39  dy[min,max]=[-19.8,-19.5]  dx[min,max]=[-0.0,0.0]  sapma>1pt=39
+     dy=-19.8 dx=-0.0  Jackson, L. M. (2019). The psychology of prejudice
+     dy=-19.8 dx=+0.0  (2nd ed.). American Psychological Association.
+     dy=-19.8 dx=+0.0  https://doi.org/10.1037/0000168-000
+     dy=-19.8 dx=-0.0  Tarhan, N. (2017). Toplum psikolojisi : sosyal şiz
+     dy=-19.8 dx=+0.0  Baskı). Timaş Yayınları.
+     dy=-19.8 dx=-0.0  Wolfe, J. M., Kluender, K. R., Dennis, L. M., Bart
+
+=== Sayfa 68->68  [P|P]  no: W=38(y=791.0,x=277.9)  L=38(y=791.0,x=276.4)  satir W=39 L=39
+  W ilk: [Metin içinde atıf: (Arasteh, 2000)]
+  W son: Sözlük ve Ansiklopedi
+  L ilk: Arasteh, A. R. (2000). Aşkta ve yaratıcılıkta yeniden doğuş : Mevlana Celaleddin
+  L son: Yazarın soyadı, Adının baş harfi. (Yıl). Kitabın adı (Baskı sayısı). Yayınevi.
+  - W[ 70.9, 82.1] [Metin içinde atıf: (Arasteh, 2000)]
+  - W[ 70.9,613.8] Hetland, B., McAndrew, N., Perazzo, J., & Hickman, R. (2018). A qualitative study
+  - W[106.3,627.6] of factors that influence active family involvement with patient care in the ICU:
+  + L[ 70.9,594.1] Hetland, B., McAndrew, N., Perazzo, J., & Hickman, R. (2018). A qualitative study of
+  + L[106.3,607.9] factors that influence active family involvement with patient care in the ICU:
+  + L[ 70.9,762.2] Yazarın soyadı, Adının baş harfi. (Yıl). Kitabın adı (Baskı sayısı). Yayınevi.
+  eslesen=36  dy[min,max]=[-19.8,-19.5]  dx[min,max]=[-0.1,-0.0]  sapma>1pt=36
+     dy=-19.8 dx=-0.1  Arasteh, A. R. (2000). Aşkta ve yaratıcılıkta yeni
+     dy=-19.8 dx=-0.0  Rumi'nin kişilik çözümlemesi. (Çev. B. Demirkol, v
+     dy=-19.8 dx=-0.1  DERGİ MAKALELERİ
+     dy=-19.8 dx=-0.1  Basılı dergi makalesi
+     dy=-19.8 dx=-0.1  Yazarın soyadı, Yazarın Adının Baş Harfi. (Yıl). M
+     dy=-19.8 dx=-0.0  Cilt(sayı), Sayfa aralığı. http://doi.org/xx.xxxxx
+
+=== Sayfa 69->69  [P|P]  no: W=39(y=791.0,x=320.4)  L=39(y=791.0,x=318.9)  satir W=37 L=37
+  W ilk: Yazarın soyadı, Adının baş harfi. (Yıl). Kitabın adı (Baskı sayısı). Yayınevi.
+  W son: Cilt(Süreli yayının sayısı), Sayfa aralığı. http://doi.org/xx.xxxxxxxxxx
+  L ilk: [Metin içinde atıf: (Bilgin, 2003; Keyormarsi ve ark., 2020; VandenBos, 2013)]
+  L son: [Metin içinde atıf: (Duckworth ve ark., 2019)]
+  - W[113.4, 82.1] Yazarın soyadı, Adının baş harfi. (Yıl). Kitabın adı (Baskı sayısı). Yayınevi.
+  + L[113.4,738.8] [Metin içinde atıf: (Duckworth ve ark., 2019)]
+  eslesen=36  dy[min,max]=[-33.5,-19.7]  dx[min,max]=[-0.0,0.0]  sapma>1pt=36
+     dy=-19.8 dx=-0.0  [Metin içinde atıf: (Bilgin, 2003; Keyormarsi ve a
+     dy=-19.8 dx=-0.0  Bilgin, N. (2003). Sosyal psikoloji sözlüğü: Kavra
+     dy=-19.8 dx=+0.0  Yayıncılık.
+     dy=-19.8 dx=-0.0  Keyormarsi, K., O'Leary, N., ve Pardee, A. B. (202
+     dy=-19.8 dx=+0.0  Education. https://doi.org/10.1036/1097-8542.11630
+     dy=-19.8 dx=-0.0  VandenBos, G. R. (Ed.). (2013). APA dictionary of 
+
+=== Sayfa 70->70  [P|P]  no: W=40(y=791.0,x=277.9)  L=40(y=791.0,x=276.4)  satir W=38 L=38
+  W ilk: [Metin içinde atıf: (Duckworth ve ark., 2019)]
+  W son: https://biruni.tuik.gov.tr/yayin/views/visitorPages/index.zul
+  L ilk: Duckworth, A. L., Quirk, A., Gallop, R., Hoyle, R. H., Kelly, D. R., ve Matthews, M.
+  L son: PATENT
+  - W[ 70.9, 82.1] [Metin içinde atıf: (Duckworth ve ark., 2019)]
+  - W[ 70.9,392.3] Altürk, S., Avci, D., Tamer, Ö. ve Atalay, Y. (2017, 6-10, Eylül). The second− and
+  + L[ 70.9,372.6] Altürk, S., Avci, D., Tamer, Ö. ve Atalay, Y. (2017, 6-10, Eylül). The second−and
+  + L[ 70.9,742.4] PATENT
+  eslesen=36  dy[min,max]=[-19.8,-19.5]  dx[min,max]=[-0.1,-0.0]  sapma>1pt=36
+     dy=-19.8 dx=-0.1  Duckworth, A. L., Quirk, A., Gallop, R., Hoyle, R.
+     dy=-19.8 dx=-0.0  D. (2019). Cognitive and noncognitive predictors o
+     dy=-19.8 dx=-0.0  the National Academy of Sciences, USA, 116(47), 23
+     dy=-19.8 dx=-0.0  https://doi.org/10.1073/pnas.1910510116
+     dy=-19.8 dx=-0.1  Yayımlanmamış konferans bildirisi
+     dy=-19.8 dx=-0.1  Yazarın soyadı, Yazarın adının baş harfi. (Yıl, Gü
+
+=== Sayfa 71->71  [P|P]  no: W=41(y=791.0,x=320.4)  L=41(y=791.0,x=318.9)  satir W=16 L=15
+  W ilk: PATENT
+  W son: [Motion picture]. California : Universal Picture.
+  L ilk: Yazarın soyadı, Yazarın Adının Baş Harfi. (Yıl). Patentin adı. Patent Ülkesi. Patent
+  L son: [Motion picture]. California : Universal Picture.
+  - W[113.4, 82.1] PATENT
+  - W[165.3,242.3] Modelling: Constructing Benchmark Case Studies of River Flow
+  - W[165.3,256.1] Prediction. In GeoComputation '98. Proceedings of the Third International
+  - W[165.3,269.9] Conference on GeoComputation, University of Bristol, United Kingdom
+  + L[165.2,228.5] Modelling: Constructing Benchmark Case Studies of River Flow Prediction.
+  + L[165.2,242.3] In GeoComputation '98. Proceedings of the Third International Conference
+  + L[165.2,256.1] on GeoComputation, University of Bristol, United Kingdom
+  eslesen=12  dy[min,max]=[-19.8,-13.7]  dx[min,max]=[-0.1,-0.0]  sapma>1pt=12
+     dy=-19.8 dx=-0.0  Yazarın soyadı, Yazarın Adının Baş Harfi. (Yıl). P
+     dy=-19.8 dx=-0.0  No
+     dy=-19.8 dx=-0.0  [Metin içinde atıf: (Apelsmeier, 2013)]
+     dy=-19.8 dx=-0.0  Apelsmeier, A. (2013). Motor vehicle having an air
+     dy=-19.8 dx=-0.0  starter of the internal combustion engine. U.S. Pa
+     dy=-13.8 dx=-0.1  [1] Abrahart, R. J. ve See, L. (1998, 17–19, Eylül
+
+=== Sayfa 72->72  [P|P]  no: W=42(y=791.0,x=277.9)  L=42(y=791.0,x=276.4)  satir W=0 L=0
+
+=== Sayfa 73->73  [P|P]  no: W=43(y=791.0,x=320.4)  L=43(y=791.0,x=318.9)  satir W=3 L=3
+  W ilk: EKLER
+  W son: EK B. Tablolar
+  L ilk: EKLER
+  L son: EK B. Tablolar
+  eslesen=3  dy[min,max]=[0.0,0.1]  dx[min,max]=[-0.0,-0.0]  sapma>1pt=0
+
+=== Sayfa 74->74  [P|P]  no: W=44(y=791.0,x=277.9)  L=44(y=791.0,x=276.4)  satir W=2 L=2
+  W ilk: EK A
+  W son: Şekil A.1. İklim haritaları: (a)Avustralya. (b) Afrika. (c)Antartika. (d). ...
+  L ilk: EK A
+  L son: Şekil A.1. İklim haritaları: (a)Avustralya. (b) Afrika. (c)Antartika. (d). ...
+  eslesen=2  dy[min,max]=[0.0,7.0]  dx[min,max]=[-0.1,-0.0]  sapma>1pt=1
+     dy=+7.0 dx=-0.0  Şekil A.1. İklim haritaları: (a)Avustralya. (b) Af
+
+=== Sayfa 75->75  [P|P]  no: W=45(y=791.0,x=320.4)  L=45(y=791.0,x=318.9)  satir W=5 L=5
+  W ilk: Tablo A.1. Ekler bölümünde tablo örneği.
+  W son: Satır C Satır C Satır C Satır C
+  L ilk: Tablo A.1. Ekler bölümünde tablo örneği.
+  L son: Satır C Satır C Satır C Satır C
+  eslesen=5  dy[min,max]=[0.0,1.4]  dx[min,max]=[-1.6,-0.0]  sapma>1pt=4
+     dy=+1.4 dx=-1.5  Kolon A Kolon B Kolon C Kolon D
+     dy=+1.2 dx=-1.6  Satır A Satır A Satır A Satır A
+     dy=+1.2 dx=-1.5  Satır B Satır B Satır B Satır B
+     dy=+1.2 dx=-1.5  Satır C Satır C Satır C Satır C
+
+=== Sayfa 76->76  [P|P]  no: W=46(y=791.0,x=277.9)  L=46(y=791.0,x=276.4)  satir W=0 L=0
+
+=== Sayfa 77->77  [P|P]  no: W=47(y=791.0,x=320.4)  L=47(y=791.0,x=318.9)  satir W=22 L=22
+  W ilk: ÖZGEÇMİŞ
+  W son: DİĞER ESERLER:
+  L ilk: ÖZGEÇMİŞ
+  L son: DİĞER ESERLER:
+  - W[113.4,481.3] • Ganapuram S., Hamidov A., Demirel, M. C., Bozkurt E., Kındap U. ve Newton A.
+  - W[131.4,495.1] (2007, 22-24, Mart). Erasmus Mundus Scholar's Perspective On Water And
+  + L[122.2,470.9] • Ganapuram S., Hamidov A., Demirel, M. C., Bozkurt E., Kındap U. ve Newton
+  + L[131.4,491.6] A. (2007, 22-24, Mart). Erasmus Mundus Scholar's Perspective On Water And
+  - W[131.4,619.2] Has Projection Mechanism Whose Front End Is Connected With Supporting Arm,
+  - W[131.4,633.0] And Base Shell Provided With Panoramic Camera That Is Connected With
+  + L[131.4,669.2] Has Projection Mechanism Whose Front End Is Connected With Supporting
+  + L[131.4,689.9] Arm, And Base Shell Provided With Panoramic Camera That Is Connected With
+  eslesen=18  dy[min,max]=[-20.7,63.8]  dx[min,max]=[-0.0,8.8]  sapma>1pt=18
+     dy=+12.0 dx=-0.0  ÖZGEÇMİŞ
+     dy=-7.8 dx=-0.0  Ad-Soyad : Xxxxxxx XXXXXXXX
+     dy=-20.7 dx=-0.0  ÖĞRENİM DURUMU:
+     dy=-7.8 dx=+8.8  • Lisans : Mezuniyet yılı, Üniversite, Fakülte, Bö
+     dy=-0.9 dx=+8.8  • Yükseklisans : Mezuniyet yılı, Üniversite, Anabi
+     dy=-13.8 dx=-0.0  MESLEKİ DENEYİM VE ÖDÜLLER:
+
+TOPLAM eslesen satir=1228, |dy|<=1pt: 820, |dx|<=1pt: 1170

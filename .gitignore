@@ -1,0 +1,15 @@
+# LaTeX ara dosyalari
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.xdv
+sablon/tez.pdf
+__pycache__/

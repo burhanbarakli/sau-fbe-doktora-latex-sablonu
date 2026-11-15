@@ -1,0 +1,54 @@
+%% Sakarya Universitesi Fen Bilimleri Enstitusu - Lisansustu Tez Sablonu (LaTeX)
+%% Derleme:  latexmk -lualatex tez.tex      (veya: lualatex tez ; lualatex tez ; lualatex tez)
+%% Secenekler: doktora | yukseklisans , notlar | notsuz (kirmizi sablon aciklamalari),
+%%             wordline (Word satir modeli, varsayilan) | texline (klasik TeX satir kirma),
+%%             wordbirebir (Word sablonunun altbilgi farkliliklarini da kopyalar: 1. bolumdeki yuksek
+%%             sayfa numarasi, yatay sayfalarda koyu olmayan numara; kaldirilirsa tum numaralar ayni hizada)
+\documentclass[doktora,notlar,wordbirebir]{sauthesis}
+
+%----------------------------------------------------------------- tez bilgileri
+\tezbasligi{TEZ BAŞLIĞI BURAYA YAZILIR\\GEREKLİ İSE İKİNCİ VE ÜÇÜNCÜ SATIR KULLANILABİLİR\\ ÜÇ SATIRA SIĞDIRINIZ}
+\tezbasligitr{TÜRKÇE TEZ BAŞLIĞI BURAYA YAZILIR}
+\tezbasligien{THESIS TITLE IN ENGLISH IS WRITTEN HERE}
+\tezbasligibeyan{TEZ BAŞLIĞI YAZILACAK}
+\teztipi{YÜKSEK LİSANS/DOKTORA TEZİ}   % "DOKTORA TEZİ" veya "YÜKSEK LİSANS TEZİ"
+\yazar{Öğrenci Adı SOYADI}
+\yazarbeyan{Öğrencinin Adı Soyadı}
+%\anabilimdali{Bilgisayar Mühendisliği}   % bos birakilirsa gri "Bir öğe seçin." basilir
+%\bilimdali{...}
+\danisman{Unvan Ad SOYAD}
+\ortakdanisman{Unvan Ad SOYAD}
+\kapaktarihi{AY YIL}
+\savunmatarihi{16.06.2022}
+\tesekkurimza{Ad Soyad}
+
+\begin{document}
+%----------------------------------------------------------------- on kisim
+\diskapak          % dis kapak + arkasi (numarasiz)
+\ickapak           % ic kapak (i) + arkasi (ii) (numara yazilmaz)
+\onaysayfasi       % iii
+\clearpage\null\thispagestyle{plain}\clearpage  % iv (bos)
+\beyanname         % v
+\clearpage\null\thispagestyle{plain}\clearpage  % vi (bos)
+\ithaf{Eşime ve çocuklarıma (Örnektir, farklı bir ifade yazılabilir)}   % vii
+\input{onkisim/tesekkur}
+\tableofcontents
+\input{onkisim/kisaltmalar}
+\input{onkisim/simgeler}
+\listoftables
+\listoffigures
+\input{onkisim/ozet}
+\input{onkisim/summary}
+
+%----------------------------------------------------------------- ana metin
+\anametin
+\input{bolumler/bolum1_giris}
+\input{bolumler/bolum2_sekil_tablolar}
+\input{bolumler/bolum3_metinler}
+\input{bolumler/bolum4_atiflar}
+\input{bolumler/bolum5}
+\input{bolumler/bolum6_sonuc}
+\input{bolumler/kaynaklar}
+\input{bolumler/ekler}
+\input{bolumler/ozgecmis}
+\end{document}
