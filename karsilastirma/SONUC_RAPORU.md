@@ -17,51 +17,63 @@
    - sayfa altında yalnız alt çıkıntının (2,58 bp) kenar boşluğuna sayılması.
 4. Alt ajanlarla denetim: 4 paralel denetim (sayfalama ve listeler, denklem ve içerik, tablo ve şekil,
    stil ve yerleşim) → düzeltme → doğrulama ajanı → düzeltme.
-   (Ara ajan raporları bu depoya konmamıştır; son durum aşağıdadır.)
+   → kılavuz uyum denetimi → düzeltme. (Ara ajan raporları bu depoya konmamıştır; son durum aşağıdadır.)
 
-## 3. Son durum (sayfa sayfa ayrıntı: `karsilastirma.txt`, `araclar/compare_pdfs.py` çıktısı)
+## 3. İlke
+
+**Kılavuz esastır.** Kılavuzun açıkça hükme bağladığı her konuda LaTeX kılavuza uyar; kılavuzun
+belirlemediği konularda Word şablonu izlenir. Word şablonunun kılavuza aykırı olduğu yerlerde
+LaTeX çıktısı bilerek Word'den ayrılır (aşağıda 5).
+
+## 4. Son durum (ayrıntı: `karsilastirma.txt`)
 | Ölçüt | Sonuç |
 |---|---|
-| Sayfa sayısı | Word 77, LaTeX 77 |
-| Sayfa eşlemesi | Birebir: Word s.N → LaTeX s.N (1–77); her sayfanın numarası (ya da numarasızlığı) aynı |
-| Eşleşen metin satırı | 1228 satır; bunların 820'sinde dikey sapma ≤ 1 pt, 1170'inde yatay sapma ≤ 1 pt |
-| Birebir sayfa | 30 sayfanın tüm satırları ≤ 1 pt (kapaklar, onay, beyanname, ithaf, teşekkür, özet, summary, 1. bölümün tamamı, kaynakça sayfaları dahil) + 15 boş sayfa çifti |
-| Sayfa numarası | Dikey sayfalarda taban çizgisi farkı 0,00 pt (ön kısım y=764,3; 1. bölüm–ilk yatay sayfa arası y=743,6; sonrası y=791,0). Rakamların yatay konumu ≤ 0,1 pt (Word numaradan sonra bir boşluk bıraktığı için kutu merkezi 1,5 pt sağda görünür). Yatay sayfalarda Word gibi koyu olmayan, sol kenarda döndürülmüş numara |
-| İçindekiler / listeler | Girdiler, sıra, girinti (113,4 / 124,7 / 137,5 / 149,4), noktalı satır aynı; her iki PDF'te sayfa numaraları kendi gerçek sayfalarıyla tutarlı |
-| Satır sonları | 250 tam eşleşen paragrafın 229'unda birebir; kalan farklar Word'ün belgelenmemiş iç metriklerinden |
-| Denklemler | (3.1)–(3.3): numara biçimi, dik harfler, öncesi/sonrası aralıklar Word ile aynı |
-| Tablolar / şekiller | Boyut, çizgiler, satır yüksekliği (32,7 bp), başlık konumu ve aralıkları, asılı girinti Word ile aynı |
+| Sayfa sayısı | Word 77, LaTeX 79 (fark: kılavuz 3.2.1 gereği bölümlerin sağ sayfadan başlaması için 2 boş sayfa) |
+| Sayfa eşlemesi | Word s.1–45 → LaTeX s.1–45; s.46–52 → +1; s.53–77 → +2 |
+| Eşleşen metin satırı | 1183 satır; 570'inde dikey sapma ≤ 1 pt, 989'unda yatay sapma ≤ 1 pt. Ön kısımda ve 1. bölümde metin alanı kılavuza göre (alt kenar 2,5 cm) Word'den uzun olduğu için satırlar bu sayfalarda kayar. |
+| Birebir sayfa | 16 sayfanın tüm satırları ≤ 1 pt + 15 boş sayfa çifti |
+| Sayfa numarası | Her sayfada alttan 1,5 cm (taban çizgisi y=799,4 bp), alt-orta, Times New Roman 12 pt koyu. Yatay sayfalarda okuma yönündeki alt kenarın (uzun kenar) ortasında, alttan 1,5 cm, koyu. |
+| Kenar boşlukları | Her dikey sayfada üst 2,5 / alt 2,5 / iç (cilt) 4 / dış 2,5 cm (ön kısım dahil) |
+| İçindekiler / listeler | İçindekiler Teşekkür ile başlar; Tablo ve Şekil listelerinde girişler arasında önce 6 / sonra 6 nk; tek satır aralığı; noktalı doldurma |
+| Denklemler | (3.1)–(3.3): numara biçimi, dik harfler, öncesi/sonrası 6 nk, metin bloğuna ortalı |
+| Tablolar / şekiller | Başlık konumu ve aralıkları kılavuza göre; uzun başlıkta 2. satır, numaradan sonraki metinle aynı hizada (≤ 0,6 pt); "Tablo 1.1. (Devamı): …" |
 
-## 4. Sayfalama mantığı (ilk sayfada sayfa no var mı?)
+## 5. Sayfalama
 | Sayfa | Word | LaTeX | Kılavuz 3.5 |
 |---|---|---|---|
-| Dış kapak (1. sayfa) ve arkası | numarasız | numarasız | numarasız ✓ |
+| Dış kapak ve arkası | numarasız | numarasız | numarasız ✓ |
 | İç kapak (i) ve arkası (ii) | numarasız | numarasız | sayılır ama yazılmaz ✓ |
 | Onay sayfası | iii | iii | iii ✓ |
-| Ön kısım | iv … xxvii (Roma); son boş sayfa numarasız | iv … xxvii (Roma); son boş sayfa numarasız | Roma ✓ |
-| Bölüm ilk sayfaları | 1., 3., 4. bölüm numarasız; 2., 5., 6. bölüm, Kaynaklar, Ekler, Özgeçmiş numaralı | 1.–6. bölümün hepsi numarasız (kullanıcı kararı); Kaynaklar, Ekler, Özgeçmiş numaralı | kural yok |
-| Ana metin | 2, 3, … (Arap) | 2, 3, … (Arap) | Arap ✓ |
+| Ön kısım | iv … xxvii; son boş sayfa numarasız | iv … xxviii; son boş sayfa da numaralı | aralıksız Romen ✓ |
+| Bölüm ilk sayfaları | 1., 3., 4. bölüm numarasız; 2., 5., 6. bölüm numaralı | 1.–6. bölüm numarasız (kullanıcı kararı); Kaynaklar, Ekler, Özgeçmiş numaralı | açık hüküm yok; numarasız bırakılacak sayfa olarak yalnız kapaklar ve i–ii sayılmış (bkz. 7) |
+| Ana metin | Arap rakamı | Arap rakamı | Arap ✓ |
 
-### 4.1 Word şablonunun kendi tutarsızlıkları (LaTeX bu noktalarda kılavuza uyar)
-1. 1., 3. ve 4. bölümlerin ilk sayfasında (s.31, 46, 53) sayfa no yok ("farklı ilk sayfa" ayarı açık, ilk sayfa altbilgisi tanımsız); 2., 5., 6. bölümlerde ve Kaynaklar'da var. Ne şablonda ne kılavuzda bununla ilgili bir kural var. Kullanıcı kararıyla LaTeX'te 1.–6. bölümlerin hepsinin ilk sayfası numarasız (sayfa sayılır); bu yüzden s.35, 61 ve 63'te (2., 5., 6. bölüm başları) Word'de numara var, LaTeX'te yok.
-2. Ön kısım sonundaki boş sayfa (s.30) numarasız; LaTeX'te de numarasız.
-3. **3. bölüm çift sayfadan (16) başlıyor**: Word'de bölümler "sonraki sayfa" bölüm sonuyla başlar; boş sayfa yalnızca 5. bölüm, EKLER ve ÖZGEÇMİŞ öncesinde var. LaTeX (`wordbirebir`) aynısını yapar; bu yüzden sayfa sayısı ve numaralar Word ile aynıdır. (Kılavuz 3.2.1 bölümlerin sağ sayfadan başlamasını ister; `wordbirebir` kaldırılırsa LaTeX her bölümü sağ sayfadan başlatır.)
-4. Sayfa no yüksekliği üç farklı değerde: ön kısım y≈764 (alttan 2,75 cm), s.32–38 y≈744, s.40+ y≈791 (alttan 1,8 cm). Kılavuz 1,5 cm diyor. Nedeni altbilgilerdeki boş paragraflar: s.32–38'deki altbilgide numaranın altında iki satırlık boş sekme paragrafı var, bu da numarayı yukarı itip metin alanını kısaltıyor. LaTeX `wordbirebir` seçeneğiyle üçünü de taklit ediyor; seçenek kaldırılırsa ana metinde tek hiza (y=791) kullanılır.
-5. İçindekiler'de "ÖZET" ve "EKLER" satırlarında noktalı sekme bozuk; "ŞEKİL VE Tablolar" ve "GEREKLİ İSE bölüm başlığı" büyük harf kuralına aykırı. "Table 2.4." yazım hatası. KISALTMALAR, 5. bölüm ve ÖZGEÇMİŞ başlıkları diğerlerinden farklı yükseklikte.
-6. Word'de denklemler metin bloğunun 27–32 pt solunda, numaralar sağ kenarın dışında; LaTeX kılavuza göre ortalıyor.
-7. Yatay sayfalarda Word'deki görünen numara elle konmuş dikey bir metin kutusu (kalın değil, konumu sayfadan sayfaya değişiyor); altbilgideki asıl numara beyaz kutuyla örtülü. LaTeX (`wordbirebir`) numarayı Word s.44'teki konuma, koyu olmayan yazıyla koyar.
+## 6. Word şablonunun kılavuza aykırı noktaları (LaTeX'te kılavuz uygulandı)
+1. Sayfa numarası üç farklı yükseklikte: ön kısım alttan ≈2,74 cm, ana metin s.2–8 ≈3,47 cm, sonrası ≈1,80 cm (kılavuz: 1,5 cm). Nedeni altbilgilerdeki boş paragraflar; s.2–8 ve ön kısımda metin alanı da kısalıyor.
+2. Yatay sayfalarda görünen numara elle konmuş, koyu olmayan dikey metin kutusu ve kısa kenarda; altbilgideki asıl numara beyaz kutuyla örtülü (kılavuz: okuma yönünde alt-orta, koyu).
+3. 3. bölüm çift sayfadan başlıyor; bölümler "sonraki sayfa" bölüm sonuyla başlıyor (kılavuz 3.2.1: sağ sayfadan).
+4. Ön kısmın sonundaki boş sayfa numarasız (kılavuz: aralıksız numaralandırma).
+5. Dış kapak yazıları yazı bloğuna göre ortalı (kılavuz 3.8.1.1: kapağın dış kenarına göre). İç kapakta tez başlığı 14 pt (kılavuz: 12 pt) ve öğrenci numarası satırı yok.
+6. Onay sayfasında 16 cm'deki "Ortak Danışman" yuvası yok, 18 cm'deki zorunlu jüri üyesi "Gerekliyse" diye işaretli, 22 cm yuvası yok.
+7. Etik beyanname İçindekiler'de (kılavuz 4.4: İçindekiler Teşekkür ile başlar).
+8. Tablo ve Şekil listelerinde girişler arasında 6 nk aralık yok (kılavuz 4.5).
+9. Ek başlığı yalnız "EK A" (kılavuz 4.10: "Ek A. Ekin adı"); EKLER ve ÖZGEÇMİŞ 1,5 satır aralıklı (kılavuz 3.4: 1 satır).
+10. Kaynaklar ve özgeçmişte girişler arasında boş paragraflar var (kılavuz 3.4: paragraflar arasında boş satır bulunmamalı).
+11. Özgeçmişte "TEZDEN TÜRETİLEN ESERLER" yazıyor (kılavuz 4.11: "TEZDEN TÜRETİLEN YAYINLAR/SUNUMLAR").
+12. "(Devamı)" sonrasında iki nokta yok (kılavuz 3.6: "Tablo 1.1. (Devamı): …"); uzun başlıkta 2. satır girintisi sabit, numaradan sonraki metinle aynı hizada değil.
+13. Dipnotlar 1,5 satır aralıklı (kılavuz 3.4: 1 satır).
+14. 3.3.1.1 başlığından önce fazladan boş paragraf (üst boşluk 59,4 pt; diğer 4. derece başlıklarda 32,7 pt).
+15. Denklemler metin bloğuna göre ortalı değil, numaralar sağ kenarın dışına taşıyor.
+16. Diğer: İçindekiler'de "ÖZET" ve "EKLER" satırlarında noktalı sekme bozuk; "Table 2.4." yazım hatası; "ŞEKİL VE Tablolar" ve "GEREKLİ İSE bölüm başlığı" büyük harf kuralına aykırı.
 
-### 4.2 Bilinçli farklar
-- Dış kapaktaki not kutusu metni LaTeX'e uyarlandı ("`\documentclass[notsuz]{sauthesis}` seçilmeli"); `notsuz` seçeneği tüm kırmızı/mavi notları kaldırır.
-- Dipnot satır aralığı: Word 1,5, kılavuz tek → LaTeX tek satır.
-- 3.3.1.1 başlığı (s.49): Word'de başlıktan önce fazladan boş bir paragraf var, bu yüzden üst boşluk 59,4 pt (diğer 4. derece başlıklarda 32,7 pt). Kılavuz 3.4'e göre ("başlıklardan önce 12 nk"; "paragrafların arasında boş satır bulunmamalıdır") LaTeX'te 32,7 pt (kullanıcı kararı: kural geçerli).
+## 7. Açık kalan konular (kılavuzun iki türlü okunabildiği yerler)
+- **Bölüm ilk sayfası numarası:** Kılavuz numarasız bırakılacak sayfa olarak yalnız dış kapak ve arkasını, iç kapak (i) ve arkasını (ii) sayar; kılavuzun kendi PDF'inde birinci derece başlıklı sayfada numara vardır. Kullanıcı kararıyla LaTeX'te 1.–6. bölümlerin ilk sayfası numarasızdır.
+- **Ek denklemleri:** Kılavuz 3.7 "A.1.1", 4.10 "(A 1.1)" örneği verir; LaTeX şu an (A.1) basar (şablonda ekte denklem yok).
+- **Aralıkların birleşmesi:** "Önce 6 / sonra 6 nk" ardışık paragraflarda birleşik (6 nk) uygulanır (Word davranışı); toplanarak 12 nk okunabilir.
+- **Kapak ve onay sayfası konumları:** "Üst kenardan 15 cm" vb. satırın üst kenarına göre uygulanmıştır (taban çizgisi ≈ 0,4 cm aşağıda).
+- **"(Devamı)" koyu mu, denklem yazı tipi (Cambria Math / Times New Roman), uzun alıntı satır aralığı:** kılavuzda açık değil; Word izlenir.
 
-## 5. Kalan küçük farklar
-- Çift sayfaya düşen yatay sayfada (s.44) üst kenar 2,5 cm; Word her yatay sayfada 4 cm kullanıyor.
-- 11 paragrafta tek kelimelik satır sonu farkı (Word'ün sıkıştırma eşiği sabit değil).
-- "lim" Word'de Cambria Math, LaTeX'te Times New Roman ile basılıyor.
-
-## 6. Kullanım
+## 8. Kullanım
 ```
 cd sablon
 latexmk -lualatex tez.tex

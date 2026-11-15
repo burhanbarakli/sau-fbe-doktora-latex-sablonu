@@ -2,9 +2,7 @@
 %% Derleme:  latexmk -lualatex tez.tex      (veya: lualatex tez ; lualatex tez ; lualatex tez)
 %% Secenekler: doktora | yukseklisans , notlar | notsuz (kirmizi sablon aciklamalari),
 %%             wordline (Word satir modeli, varsayilan) | texline (klasik TeX satir kirma),
-%%             wordbirebir (Word sablonunun altbilgi farkliliklarini da kopyalar: 1. bolumdeki yuksek
-%%             sayfa numarasi, yatay sayfalarda koyu olmayan numara; kaldirilirsa tum numaralar ayni hizada)
-\documentclass[doktora,notlar,wordbirebir]{sauthesis}
+\documentclass[doktora,notlar]{sauthesis}
 
 %----------------------------------------------------------------- tez bilgileri
 \tezbasligi{TEZ BAŞLIĞI BURAYA YAZILIR\\GEREKLİ İSE İKİNCİ VE ÜÇÜNCÜ SATIR KULLANILABİLİR\\ ÜÇ SATIRA SIĞDIRINIZ}
@@ -13,6 +11,7 @@
 \tezbasligibeyan{TEZ BAŞLIĞI YAZILACAK}
 \teztipi{YÜKSEK LİSANS/DOKTORA TEZİ}   % "DOKTORA TEZİ" veya "YÜKSEK LİSANS TEZİ"
 \yazar{Öğrenci Adı SOYADI}
+%\ogrencino{D205001001}   % ic kapakta yazar adinin altina yazilir
 \yazarbeyan{Öğrencinin Adı Soyadı}
 %\anabilimdali{Bilgisayar Mühendisliği}   % bos birakilirsa gri "Bir öğe seçin." basilir
 %\bilimdali{...}

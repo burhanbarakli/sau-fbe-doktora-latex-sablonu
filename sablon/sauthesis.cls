@@ -35,17 +35,18 @@
 % Ana metin: sayfa no taban cizgisi y=790.9 bp (Word ciktisi; alttan 1.8 cm)
 % On kisim (Word sablonunda): metin alani y=741.1 bp'de biter, sayfa no taban cizgisi y=764.3 bp
 \RequirePackage[a4paper,inner=4cm,outer=2.5cm,top=2.5cm,bottom=73.45bp,
-  headheight=0bp,headsep=0bp,footskip=22.58bp]{geometry}
-\newcommand\sau@onkisimgeometri{\newgeometry{inner=4cm,outer=2.5cm,top=2.5cm,bottom=103.37bp,
-  headheight=0bp,headsep=0bp,footskip=25.74bp}}
+  headheight=0bp,headsep=0bp,footskip=30.93bp]{geometry}
+% Kilavuz 3.5: sayfa numarasi alttan 1,5 cm (taban cizgisi y = 841.89-42.52 = 799.37 bp);
+% metin blogu alti y=768.44 bp -> footskip = 30.93 bp. On kisim da ayni metin alanini kullanir
+% (Word sablonunda on kisimda altbilgideki bos paragraf metin alanini kisaltiyordu).
+\newcommand\sau@onkisimgeometri{}
 \newcommand\sau@anametingeometri{\restoregeometry}
 % [wordbirebir] Word sablonunda 1. bolum ile ilk yatay sayfa arasindaki altbilgi (footer6) sayfa
 % numarasinin altinda iki satirlik bos sekme paragrafi tasir: numara y=743.6 bp'ye cikar ve
 % metin alani kisalir (son satirin tamami y=732.4 bp'nin ustunde kalir). 1. bolumun ilk sayfasi
 % "farkli ilk sayfa" oldugundan altbilgisizdir ve tam metin alanini kullanir; kisa alan 2. sayfada
 % baslar (sayfa sonu degistirilemedigi icin boyutlar ilk sayfa basildiktan hemen sonra degistirilir).
-\newcommand\sau@kisaaltbilgibaslat{\AddToHookNext{shipout/after}{%
-  \global\advance\textheight-45.54bp\global\footskip20.7bp\global\sau@kisaaltbilgitrue}}
+\newcommand\sau@kisaaltbilgibaslat{}% (kullanilmiyor: kilavuz 3.5 tek tip numara konumu ister)
 \newif\ifsau@kisaaltbilgi
 \setlength{\parindent}{0bp}
 
@@ -127,7 +128,7 @@
 \setlength{\maxdepth}{30bp}
 \renewcommand\footnoterule{\kern-3bp\hrule width 144bp\kern2.6bp}
 % Word: dipnot girintisiz, isaretten sonra bir bosluk
-\renewcommand\@makefntext[1]{\noindent\@makefnmark\ #1\par}
+\renewcommand\@makefntext[1]{\footnotesize\noindent\@makefnmark\ #1\par}% \@parboxrestore'dan sonra tek satir (kilavuz 3.4)
 \setlength{\footnotesep}{11.5bp}
 \setlength{\skip\footins}{13.8bp plus 2bp}
 \raggedbottom
@@ -147,9 +148,13 @@
 % [wordbirebir] Yatay sayfalar: Word'de numara elle konmus dikey metin kutusudur (koyu degil);
 % altbilgideki numara beyaz kutuyla ortulur. Konum Word s.44: yatay sayfanin metin blogu
 % ortasinda (y=318.9 bp), sol kenardan 64.3 bp (taban cizgisi).
+% Yatay sayfalar (kilavuz 3.5: "metnin okuma yonunde sayfanin alt-ortasina", alttan 1,5 cm, koyu):
+% sayfa dikey A4 olarak uretilip 90 derece dondurulerek gosterilir; numara, okuma yonundeki alt
+% kenarin (dikey sayfanin sag uzun kenari) ortasina, icerikle ayni yonde konur.
+\def\sau@yatayno{\AddToShipoutPictureFG*{\setlength\unitlength{1bp}%
+  \put(552.76,420.94){\rotatebox{90}{\raisebox{0bp}[0bp][0bp]{\makebox[0bp][c]{\normalfont\bfseries\thepage}}}}}}
 \def\ps@sauyatay{\def\@oddhead{}\def\@evenhead{}%
-  \def\@oddfoot{\hfil\raisebox{13.4bp}[0bp][0bp]{\normalfont\thepage}\hfil}%
-  \def\@evenfoot{\hskip85.04bp\hfil\raisebox{13.4bp}[0bp][0bp]{\normalfont\thepage}\hfil}}
+  \def\@oddfoot{\sau@yatayno\hfil}\let\@evenfoot\@oddfoot}
 \pagestyle{plain}
 % bos arka sayfalar (\cleardoublepage) de numarali (kilavuz 3.5: tum sayfalar aralıksız numaralanir)
 \renewcommand\cleardoublepage{\clearpage\if@twoside\ifodd\c@page\else
@@ -183,30 +188,38 @@
   \AddToShipoutPictureFG*{\setlength\unitlength{1bp}%
     \put(#1,\fpeval{841.89-#2}){\makebox[0bp][#3]{\normalfont\strut@none #4}}}}
 \def\strut@none{}
+\newcommand\sau@ogrencino{\sau@gri{Öğrenci Numarası (Örnek: D205001001)}}
+\newcommand\ogrencino[1]{\renewcommand\sau@ogrencino{#1}}
 \newcommand\sau@kirmizi[1]{\ifsau@notlar\textcolor[HTML]{FF0000}{#1}\else#1\fi}
 \newcommand\sau@mavi[1]{\ifsau@notlar\textcolor[HTML]{3366FF}{#1}\else#1\fi}
+\newcommand\notrenk[2]{\ifsau@notlar\textcolor[HTML]{#1}{#2}\else#2\fi}  % sablon notlari (notsuz: siyah)
 \newcommand\sau@gri[1]{\textcolor[HTML]{808080}{#1}}   % Word icerik denetimi yer tutucusu
 
 %------------------------------------------------------------------ dis kapak / ic kapak
-% Konumlar Word ciktisindan olculmustur (tek numarali sayfa, yazi blogu ortasi x=320.4 pt).
+% Dikey konumlar Word ciktisindan olculmustur (satir ust kenari kilavuzdaki 15/16/20/21/23/26 cm).
+% Kilavuz 3.8.1.1: dis kapaktaki yazilar kapagin dis kenarina gore ortalanir (x = 595.28/2 = 297.64);
+% ic kapak normal sayfadir, yazi bloguna gore ortalanir (x = 318.9). Tez basligi dis kapakta 14 pt,
+% ic kapakta 12 pt (3.8.1.2).
+\newcommand\sau@kx{318.9}
 \newcommand\sau@kapakortak[1]{% #1: 1=dis kapak, 0=ic kapak
-  \sau@put{318.9}{96.6}{c}{\bfseries T.C.}%
-  \sau@put{318.9}{110.4}{c}{\bfseries SAKARYA ÜNİVERSİTESİ}%
-  \sau@put{318.9}{124.2}{c}{\bfseries FEN BİLİMLERİ ENSTİTÜSÜ}%
-  \sau@put{318.9}{269.2}{c}{\parbox[t]{414bp}{\centering\large\bfseries \sau@tezbasligi}}%
-  \sau@put{318.9}{470.8}{c}{\bfseries \sau@yazar}%
-  \sau@put{318.9}{584.3}{c}{\sau@anabilimdali\ \textbf{Anabilim Dalı}}%
+  \ifnum#1=1 \def\sau@kx{297.64}\def\sau@kbaslik{\large}\else\def\sau@kx{318.9}\def\sau@kbaslik{}\fi
+  \sau@put{\sau@kx}{96.6}{c}{\bfseries T.C.}%
+  \sau@put{\sau@kx}{110.4}{c}{\bfseries SAKARYA ÜNİVERSİTESİ}%
+  \sau@put{\sau@kx}{124.2}{c}{\bfseries FEN BİLİMLERİ ENSTİTÜSÜ}%
+  \sau@put{\sau@kx}{269.2}{c}{\parbox[t]{414bp}{\centering\sau@kbaslik\bfseries \sau@tezbasligi}}%
+  \sau@put{\sau@kx}{470.8}{c}{\bfseries \sau@yazar}%
+  \sau@put{\sau@kx}{584.3}{c}{\sau@anabilimdali\ \textbf{Anabilim Dalı}}%
 }
 \newcommand\diskapak{%
   \begingroup
   \thispagestyle{sauempty}%
   \sau@kapakortak{1}%
-  \sau@put{318.9}{438.6}{c}{\bfseries \sau@teztipi}%
-  \sau@put{318.9}{612.7}{c}{\sau@bilimdali\ \textbf{Bilim Dalı (Varsa)}}%
-  \sau@put{318.9}{754.4}{c}{\bfseries \sau@kapaktarihi\sau@kapaktarihiornek}%
+  \sau@put{297.64}{438.6}{c}{\bfseries \sau@teztipi}%
+  \sau@put{297.64}{612.7}{c}{\sau@bilimdali\ \textbf{Bilim Dalı \sau@kirmizi{(Varsa)}}}%
+  \sau@put{297.64}{754.4}{c}{\bfseries \sau@kapaktarihi\sau@kapaktarihiornek}%
   \ifsau@notlar
     \AddToShipoutPictureFG*{\setlength\unitlength{1bp}%
-      \put(153.1,\fpeval{841.89-569.2}){%
+      \put(131.84,\fpeval{841.89-569.2}){%
         \fcolorbox{red}{white}{\parbox[b][87.3bp][c]{350.8bp}{\hspace*{12.9bp}\parbox{326bp}{%
           \normalsize\teksatir
           Tez bu şablon kullanılarak yazılabilir. Eğer bu şablon üzerinden tez yazılacak ise
@@ -222,6 +235,7 @@
   \thispagestyle{sauempty}%
   \sau@kapakortak{0}%
   \sau@put{318.9}{442.5}{c}{\bfseries \sau@teztipi}%
+  \sau@put{318.9}{484.6}{c}{\bfseries \sau@ogrencino}%
   \sau@put{318.9}{612.8}{c}{\sau@bilimdali\ \textbf{Bilim Dalı} \textbf{\sau@kirmizi{(Varsa)}}}%
   \sau@put{318.9}{672.0}{c}{\bfseries Tez Danışmanı: \sau@danisman}%
   \sau@put{318.9}{699.0}{c}{\bfseries \sau@kirmizi{(Varsa)} Ortak Danışman: \sau@ortakdanisman}%
@@ -253,9 +267,10 @@
   \sau@put{318.9}{295.0}{c}{\textbf{Tez Jürisi}}%
   \sau@juri{351.8}{\textbf{Unvan Adı SOYADI}}{}{Sakarya Üniversitesi}{Jüri Başkanı :}%
   \sau@juri{409.3}{\textbf{Unvan Adı SOYADI} \sau@kirmizi{(Danışman)}}{}{Sakarya Üniversitesi}{Jüri Üyesi :}%
-  \sau@juri{465.2}{\textbf{Unvan Adı SOYADI}}{}{Sakarya Üniversitesi}{Jüri Üyesi :}%
-  \sau@juriek{521.8}{Unvan Adı SOYADI}{……\ \ \ \ Üniversitesi}%
+  \sau@juri{465.2}{\textbf{Unvan Adı SOYADI} \sau@kirmizi{(Ortak Danışman)}}{}{Sakarya Üniversitesi}{Jüri Üyesi :}%
+  \sau@juri{521.8}{\textbf{Unvan Adı SOYADI}}{}{……\ \ \ \ Üniversitesi}{Jüri Üyesi :}%
   \sau@juriek{578.6}{Unvan Adı SOYADI}{……\ \ \ \ Üniversitesi}%
+  \sau@juriek{635.3}{Unvan Adı SOYADI}{……\ \ \ \ Üniversitesi}%
   \clearpage}
 \newcommand\yazar@onaymetni{%
   \sau@onayyazar\ tarafından hazırlanan “\sau@onaybaslik” adlı tez çalışması \sau@savunmatarihi\
@@ -299,7 +314,7 @@
 \newif\ifsau@ilksayfanosuz
 \newcommand\bolumilksayfanosuz{\global\sau@ilksayfanosuztrue}
 \newif\ifsau@anametinde
-\renewcommand\chapter{\ifsau@wordbirebir\ifsau@anametinde\clearpage\else\cleardoublepage\fi\else\cleardoublepage\fi
+\renewcommand\chapter{\cleardoublepage
   \ifsau@ilksayfanosuz\thispagestyle{sauempty}\global\sau@ilksayfanosuzfalse\else\thispagestyle{plain}\fi
   \global\@topnum\z@\@afterindentfalse
   \@ifstar{\@schapter}{\ifsau@anametinde\thispagestyle{sauempty}\fi\@dblarg\@chapter}}
@@ -346,12 +361,12 @@
   {\parskip=0bp\@starttoc{toc}}}
 \renewcommand\listoftables{%
   \sau@onbaslik{\listtablename}%
-  \vspace{6bp}{\birbucuksatir\parskip=0bp\raggedleft\textbf{\uline{Sayfa}}\par}\vspace{12bp}%
-  {\parskip=0bp\let\addvspace\@gobble\@starttoc{lot}}}
+  \vspace{6bp}{\birbucuksatir\parskip=0bp\raggedleft\textbf{\uline{Sayfa}}\par}\vspace{6bp}% kilavuz 4.5: girisler once 6 / sonra 6 nk
+  {\parskip=6bp\let\addvspace\@gobble\@starttoc{lot}}}
 \renewcommand\listoffigures{%
   \sau@onbaslik{\listfigurename}%
-  \vspace{6bp}{\birbucuksatir\parskip=0bp\raggedleft\textbf{\uline{Sayfa}}\par}\vspace{12bp}%
-  {\parskip=0bp\let\addvspace\@gobble\@starttoc{lof}}}
+  \vspace{6bp}{\birbucuksatir\parskip=0bp\raggedleft\textbf{\uline{Sayfa}}\par}\vspace{6bp}% kilavuz 4.5: girisler once 6 / sonra 6 nk
+  {\parskip=6bp\let\addvspace\@gobble\@starttoc{lof}}}
 % On kisim basligi: numarasiz birinci derece baslik + icindekilere giris
 \newcommand\sau@onbaslik[1]{\chapter*{#1}\phantomsection\addcontentsline{toc}{chapter}{#1}}
 
@@ -366,7 +381,7 @@
 %------------------------------------------------------------------ beyanname / ithaf / tesekkur
 \newcommand\beyanname{%
   \cleardoublepage\pagenumbering{roman}\setcounter{page}{5}%
-  \sau@onbaslik{ETİK İLKE VE KURALLARA UYGUNLUK BEYANNAMESİ}%
+  \chapter*{ETİK İLKE VE KURALLARA UYGUNLUK BEYANNAMESİ}% kilavuz 4.4: icindekiler Tesekkur ile baslar
   Sakarya Üniversitesi Fen Bilimleri Enstitüsü Lisansüstü Eğitim-Öğretim Yönetmeliğine ve
   Yükseköğretim Kurumları Bilimsel Araştırma ve Yayın Etiği Yönergesine uygun olarak hazırlamış
   olduğum “\sau@kirmizi{\sau@tezbasligibeyan}” başlıklı tezin bana ait, özgün bir
@@ -412,13 +427,12 @@
 
 %------------------------------------------------------------------ ana metin baslangici
 \newcommand\anametin{%
-  % on kisim sonundaki bos arka sayfa Word'de numarasiz
-  \clearpage\ifodd\c@page\else\hbox{}\thispagestyle{sauempty}\newpage\fi
+  \cleardoublepage   % kilavuz 3.5: on kisim aralıksız numaralanir (bos arka sayfa da)
   \sau@anametingeometri\ifsau@wordbirebir\sau@kisaaltbilgibaslat\fi
   \pagenumbering{arabic}\setcounter{page}{1}\global\sau@anametindetrue}
 % [wordbirebir] kisa altbilgi bolgesi ilk yatay sayfada biter; yatay sayfalarda Word numarasi
 \AddToHook{env/landscape/before}{\ifsau@kisaaltbilgi\clearpage\global\sau@kisaaltbilgifalse\restoregeometry\fi}
-\AddToHook{env/landscape/begin}{\ifsau@wordbirebir\clearpage\pagestyle{sauyatay}\fi}
+\AddToHook{env/landscape/begin}{\clearpage\pagestyle{sauyatay}}
 
 %------------------------------------------------------------------ sekil ve tablolar
 % Sekil basligi: seklin altinda, once 6 nk sonra 12 nk, tek satir; tek satira sigarsa ortali,
@@ -429,12 +443,13 @@
 \renewcommand\thetable{\thechapter.\arabic{table}}
 \renewcommand\theequation{\thechapter.\arabic{equation}}
 \@addtoreset{figure}{chapter}\@addtoreset{table}{chapter}\@addtoreset{equation}{chapter}
-\DeclareCaptionLabelSeparator{sau}{.\ }
+\DeclareCaptionLabelSeparator{sau}{.\hspace{\fontdimen2\font}}% esnemeyen bosluk: 2. satir hizasi tam
 \DeclareCaptionFont{sauline}{\teksatir}
 \captionsetup{labelsep=sau,labelfont=bf,textfont=sauline,font=sauline,format=hang,
   justification=justified,singlelinecheck=true,skip=0bp,position=below}
-\DeclareCaptionFormat{sauhang}{\teksatir\hangindent=48.2bp\hangafter=1 #1#2#3\par}
-\DeclareCaptionFormat{sauhangt}{\teksatir\hangindent=49.65bp\hangafter=1 #1#2#3\par}
+\newlength\sau@capw
+\DeclareCaptionFormat{sauhang}{\teksatir\settowidth\sau@capw{#1#2}\hangindent=\sau@capw\hangafter=1 #1#2#3\par}
+\DeclareCaptionFormat{sauhangt}{\teksatir\settowidth\sau@capw{#1#2}\hangindent=\sau@capw\hangafter=1 #1#2#3\par}
 \captionsetup[figure]{indention=0bp,format=sauhang,aboveskip=3.5bp,belowskip=-12.9bp}
 \captionsetup[table]{indention=0bp,format=sauhangt,position=above,aboveskip=-0.7bp,belowskip=0bp}
 \setlength{\abovecaptionskip}{0bp}
@@ -445,7 +460,7 @@
 % Word'de sekiller metin icinde (satir icinde) durdugundan H yerlesimi kullanilir
 \floatplacement{figure}{H}
 \floatplacement{table}{H}
-\newcommand\devami{\textbf{(Devamı)}}
+\newcommand\devami{\textbf{(Devamı)}:}
 % Tablolar (Word: hucre ic kenar boslugu 108 tw = 5.4 bp, cizgi 0.72 bp)
 \setlength{\arrayrulewidth}{0.72bp}
 \setlength{\doublerulesep}{1.5bp}
@@ -508,12 +523,12 @@
 
 %------------------------------------------------------------------ ekler
 \newcommand\ekler{%
-  \bolumsuz{EKLER}\setcounter{chapter}{0}%
+  \bolumsuz{EKLER}\setcounter{chapter}{0}\teksatir   % kilavuz 3.4: ekler 1 satir aralikli
   \renewcommand\thefigure{\Alph{chapter}.\arabic{figure}}%
   \renewcommand\thetable{\Alph{chapter}.\arabic{table}}%
   \renewcommand\theequation{\Alph{chapter}.\arabic{equation}}}
 \newcommand\ek[1]{\par\stepcounter{chapter}\setcounter{figure}{0}\setcounter{table}{0}\setcounter{equation}{0}%
-  {\noindent\textbf{EK \Alph{chapter}}\par}}
+  {\noindent\textbf{EK \Alph{chapter}. #1}\par}}   % kilavuz 4.10: "Ek A. Ekin adı"
 
 %------------------------------------------------------------------ ozgecmis
 \newenvironment{ozgecmis}{\bolumsuz{ÖZGEÇMİŞ}\begingroup\teksatir}{\par\endgroup}
