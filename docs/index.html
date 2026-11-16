@@ -587,20 +587,61 @@ Extended summary …
 
 <section id="kaynaklar">
 <h2>Atıflar ve kaynaklar</h2>
-<p>Kaynaklar <code>bolumler/kaynaklar.tex</code> dosyasına <b>elle</b> yazılır. Şablon BibTeX/biblatex kullanmaz; sıralamayı ve biçimi (APA 7 ya da numaralı) siz verirsiniz. Metin içi atıfları da elle yazarsınız: <code>(Baran, 2003)</code> veya <code>[1]</code>.</p>
+<p>İki yol var. İkisi de kılavuzdaki biçimi verir: tek satır aralığı, girişler arasında 6 nk, 1,25 cm asılı girinti, yazarlar arasında “ve”, üç ve daha fazla yazarda “ve ark.”.</p>
 <p>40 kelimeden uzun alıntılar için <code>\begin{alinti} … \end{alinti}</code> kullanın. Alıntı soldan girintili ve 10 pt yazılır.</p>
-<h3>Yazar–yıl (APA) düzeni</h3>
+
+<h3>1. Elle yazmak (varsayılan)</h3>
+<p>Kaynaklar <code>bolumler/kaynaklar.tex</code> dosyasına <b>elle</b> yazılır. Metin içi atıfları da siz yazarsınız: <code>(Baran, 2003)</code>, <code>Uyar ve ark. (2018)</code>, <code>[1]</code>. Sıralamayı da siz yaparsınız: APA'da soyada göre alfabetik, numaralı düzende metinde geçiş sırasına göre.</p>
+<h4>Yazar–yıl (APA) düzeni</h4>
 <pre><code>\bolumsuz{KAYNAKLAR}
 \kaynak{Sapolsky, R. M. (2017). \textit{Behave: The biology of humans at our best and worst}. Penguin Books.}
 \kaynak{Tarhan, N. (2012). \textit{Mesnevi terapi}. Timaş Yayınları.}</code></pre>
 <p>Her <code>\kaynak</code> 1,25 cm asılı girintili, tek satır aralıklı bir giriştir.</p>
-<h3>Numaralı düzen</h3>
+<h4>Numaralı düzen</h4>
 <pre><code>\begin{kaynaklistesi}
   \item Abrahart, R. J. ve See, L. (2000). Comparing neural network … \textit{Hydrological Processes}, 14, 2157–2172.
   \item …
 \end{kaynaklistesi}</code></pre>
 <p>Numaralar [1], [2] … biçiminde kendiliğinden verilir.</p>
 <div class="note"><p><code>kaynaklar.tex</code>'teki açıklama metinleri ve APA örnekleri Word şablonundan aktarılmıştır. Kendi listenizi yazarken bunları silin.</p></div>
+
+<h3 id="zotero">2. Zotero, Mendeley ya da JabRef'ten .bib ile (isteğe bağlı)</h3>
+<p>Kaynak listesi ve metin içi atıflar <code>.bib</code> dosyasından biblatex-apa ve biber ile üretilir. Alfabetik sıralama, “ve ark.”, 2008a/2008b ayrımı ve yalnızca atıf yapılan eserlerin listelenmesi kendiliğinden olur. Ayarlar <code>sablon/bib-ayar.tex</code> dosyasındadır; <code>sauthesis.cls</code>'ye dokunmaz.</p>
+<ol>
+  <li><code>.bib</code> dosyanızı <code>sablon/</code> klasörüne koyun (örneklerde adı <code>zotero.bib</code>).</li>
+  <li><code>tez.tex</code>'te <code>\documentclass</code> satırının altındaki satırların başındaki <code>%</code> işaretini silin:
+<pre><code>%\newcommand\kaynakduzeni{numarali}   <span class="c">% numaralı [1] düzen için bunu da açın</span>
+\input{bib-ayar}
+\addbibresource{zotero.bib}</code></pre></li>
+  <li><code>bolumler/kaynaklar.tex</code>'in bütün içeriğini şu iki satırla değiştirin:
+<pre><code>\bolumsuz{KAYNAKLAR}
+\printbibliography[heading=none]</code></pre></li>
+  <li>Metinde atıf yapın ve derleyin. <code>latexmk</code> biber'i kendisi çalıştırır; Overleaf ve AyakaLeaf'te <b>Derle</b> yeterlidir.</li>
+</ol>
+<table>
+  <tr><th>Yazdığınız</th><th>Çıktı</th></tr>
+  <tr><td><code>\textcite{tarhan2012}</code></td><td>Tarhan (2012)</td></tr>
+  <tr><td><code>\parencite{tarhan2012}</code></td><td>(Tarhan, 2012)</td></tr>
+  <tr><td><code>\parencite[s.~12]{tarhan2012}</code></td><td>(Tarhan, 2012, s. 12)</td></tr>
+  <tr><td><code>\parencite{abrahart2000,tarhan2012}</code></td><td>(Abrahart ve See, 2000; Tarhan, 2012)</td></tr>
+  <tr><td><code>\textcite{uyar2018}</code> (üç yazar)</td><td>Uyar ve ark. (2018)</td></tr>
+  <tr><td><code>\cite{a,b,c}</code> (numaralı düzen)</td><td>[1–3]</td></tr>
+  <tr><td><code>\nocite{anahtar}</code></td><td>Metinde görünmez, eser kaynakçaya girer</td></tr>
+</table>
+<div class="note"><p>Kaynakçada başlıklar <code>.bib</code>'de nasıl yazılıysa öyle basılır. APA İngilizce başlıklarda yalnızca ilk harfi (ve iki noktadan sonraki ilk harfi) büyük ister; bunu Zotero'da başlığı düzelterek sağlayın.</p></div>
+
+<h4>.bib dosyasını almak</h4>
+<table>
+  <tr><th>Araç</th><th>Nasıl</th></tr>
+  <tr><td><b>Zotero + Better BibTeX</b> (önerilen)</td><td>Zotero'ya <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> eklentisini kurun. Koleksiyona sağ tıklayın → <i>Koleksiyonu Dışa Aktar…</i> → biçim <b>Better BibLaTeX</b>, <b>Keep updated</b> işaretli → <code>sablon/zotero.bib</code>. Zotero'daki her değişiklikte dosya kendiliğinden yenilenir ve atıf anahtarları (<code>tarhan2012</code> gibi) değişmez.</td></tr>
+  <tr><td><b>Zotero</b> (eklentisiz)</td><td><i>Dosya → Kütüphaneyi Dışa Aktar…</i> → <b>BibLaTeX</b>. Her değişiklikten sonra yeniden dışa aktarın.</td></tr>
+  <tr><td><b>AyakaLeaf Pro</b> (kendi sunucunuz)</td><td>Zotero ve Mendeley bağlantısı ücretsiz: <i>Yeni Dosya → Zotero'dan</i>. Sunucu ayarı ve kullanım: <a href="https://burhanbarakli.github.io/sau-fbe-ayakaleaf/#zotero">AyakaLeaf kılavuzu → Zotero ve Mendeley</a>.</td></tr>
+  <tr><td><b>Overleaf.com</b></td><td>Zotero / Mendeley / Papers bağlantısı ücretli hesaplarda: <i>Yeni Dosya → Zotero'dan</i>. Ücretsiz hesapta <code>.bib</code>'i yükleyin.</td></tr>
+  <tr><td><b>Mendeley, JabRef, EndNote</b></td><td>BibTeX ya da BibLaTeX olarak dışa aktarın; adımlar aynıdır.</td></tr>
+</table>
+
+<h4>.bib kullanmadan Zotero</h4>
+<p>Zotero'da eserleri seçin, sağ tıklayın → <i>Seçili Öğelerden Kaynakça Oluştur…</i> → stil <i>American Psychological Association 7th edition</i>, dil <i>Türkçe</i>, çıktı <i>Panoya kopyala</i>. Her girişi bir <code>\kaynak{...}</code> içine yapıştırın ve italik kısımları <code>\textit{}</code> ile işaretleyin. Zotero'nun APA stili yazarlar arasında “&amp;” kullanır; kılavuza uymak için bunları “ve” yapın.</p>
 </section>
 
 <section id="ekler">

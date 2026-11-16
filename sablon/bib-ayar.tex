@@ -1,0 +1,57 @@
+%% bib-ayar.tex - ISTEGE BAGLI: kaynakcayi Zotero / Mendeley / JabRef .bib dosyasindan uretmek icin.
+%% Varsayilan sablon bu dosyayi kullanmaz; kaynaklar bolumler/kaynaklar.tex'e elle yazilir.
+%%
+%% Kullanim:
+%%   1) .bib dosyanizi projeye koyun (ornegin zotero.bib).
+%%   2) tez.tex'te \documentclass satirindan sonraki satirlarin basindaki % isaretini silin:
+%%        \input{bib-ayar}
+%%        \addbibresource{zotero.bib}
+%%      Numarali duzen ([1], [3-7]) icin \input{bib-ayar} satirindan ONCE sunu da acin:
+%%        \newcommand\kaynakduzeni{numarali}
+%%   3) Metinde (yazar-yil):  \textcite{anahtar} -> Baran (2003)   \parencite{anahtar} -> (Baran, 2003)
+%%                            \parencite[s.~12]{anahtar} -> (Baran, 2003, s. 12)
+%%      Metinde (numarali):   \cite{a} -> [1]     \cite{a,b,c} -> [1-3]
+%%   4) bolumler/kaynaklar.tex'in icerigini su iki satirla degistirin:
+%%        \bolumsuz{KAYNAKLAR}
+%%        \printbibliography[heading=none]
+%%   Derleme: latexmk biber'i kendisi calistirir (Overleaf/AyakaLeaf'te "Derle" yeterli).
+%%   Kaynaklar APA 7 bicimindedir; basliklar .bib'de nasil yaziliysa oyle basilir.
+
+\providecommand\kaynakduzeni{apa}
+\ifdefstring{\kaynakduzeni}{numarali}
+  {\usepackage[bibstyle=apa,citestyle=numeric-comp,sorting=none,backend=biber]{biblatex}}
+  {\usepackage[style=apa,backend=biber]{biblatex}}
+
+% Kilavuz: "ve" (APA'daki "&" yerine), ucten fazla yazarda "ve ark."
+\DefineBibliographyStrings{turkish}{andothers={ve ark\adddot}}
+\DeclareDelimFormat[bib,biblist,parencite,fullcite,fullcitebib]{finalnamedelim}{\addspace\bibstring{and}\space}
+% Kaynakcada son yazardan once virgul yok: "Arıboğan, D. Ü., Ortaylı, İ. ve Yavuz, H."
+\makeatletter
+\ifdefined\apablx@ifnotfinalname
+  \renewcommand*{\apablx@ifnotfinalname}{%
+    \ifboolexpr{test {\ifnumless{\value{listcount}}{\numexpr\value{liststop}-1\relax}} or test \ifmorenames}}
+\fi
+\makeatother
+
+% Basliklar .bib'de nasil yaziliysa oyle basilir (langid=english olsa bile buyuk/kucuk harf degistirilmez)
+\DeclareFieldFormat{apacase}{#1}
+
+% Word "KAYNAKLAR" stili: tek satir aralikli, girisler arasi 6 nk, 1,25 cm asili girinti
+\renewcommand*{\bibfont}{\teksatir}
+\setlength{\bibhang}{1.25cm}
+\setlength{\bibitemsep}{6bp}
+% Uzun DOI/URL'lerin karakterleri arasina bosluk girmesin
+\biburlbigskip=0mu plus 1mu\relax
+\biburlnumskip=0mu\relax
+\biburlucskip=0mu\relax
+\biburllcskip=0mu\relax
+
+% Numarali duzen: sauthesis.cls'deki kaynaklistesi ile ayni olculer ([1], 51,85 bp metin girintisi)
+\ifdefstring{\kaynakduzeni}{numarali}{%
+  \defbibenvironment{bibliography}
+    {\list{\printtext{\mkbibbrackets{\printfield{labelprefix}\printfield{labelnumber}}}}
+       {\setlength{\labelwidth}{34bp}\setlength{\leftmargin}{51.85bp}\setlength{\labelsep}{0bp}%
+        \setlength{\itemindent}{0bp}\setlength{\itemsep}{13.8bp}\setlength{\parsep}{0bp}%
+        \setlength{\topsep}{6bp}\renewcommand*{\makelabel}[1]{##1\hss}}}
+    {\endlist}
+    {\item}}{}
