@@ -1,5 +1,10 @@
 # SAÜ FBE Doktora Tezi LaTeX Şablonu
 
+[![Şablonla hazırlanmış örnek tezden sayfalar: dış kapak, onay sayfası, içindekiler, bölüm başlangıcı, şekiller ve denklemler](docs/img/vitrin.png)](docs/ornek_tez.pdf)
+
+<p align="center"><sub>Şablonla hazırlanmış örnek tez (<code>notsuz</code>). Tamamı: <a href="docs/ornek_tez.pdf">örnek PDF</a> ·
+<a href="https://burhanbarakli.github.io/sau-fbe-doktora-latex-sablonu/">resimli kullanım kılavuzu</a></sub></p>
+
 Sakarya Üniversitesi Fen Bilimleri Enstitüsü'nün (SAÜ FBE) resmi **Word doktora/yüksek lisans tez şablonunun**
 ve **Lisansüstü Tez Yazım Kılavuzu**'nun (Senato 04.08.2022, 621-9) LaTeX karşılığıdır.
 
