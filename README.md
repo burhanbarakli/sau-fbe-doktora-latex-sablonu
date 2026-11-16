@@ -61,6 +61,44 @@ ya da `lualatex tez.tex` komutunu üç kez çalıştırın (içindekiler ve list
 `sablon/latexmkrc` dosyası sayesinde yalnızca `latexmk tez.tex` yazmak da LuaLaTeX ile derler; Overleaf ve
 VS Code LaTeX Workshop da bu dosyayı okur.
 
+## Claude ile kurulum
+
+Kurulumla uğraşmak istemiyorsanız [Claude Code](https://claude.com/claude-code)'u (Claude masaüstü
+uygulamasındaki **Code** sekmesi ya da terminaldeki `claude`) açıp aşağıdaki istemi yapıştırın. Claude TeX
+dağıtımını kurar (her kurulum komutundan önce onayınızı alır), depoyu indirir, ilk PDF'i derler ve tez
+bilgilerinizi sorup `tez.tex`'e yazar.
+
+```text
+Bilgisayarıma SAÜ FBE LaTeX tez şablonunu kurmamı ve ilk PDF'i almamı istiyorum.
+Şablon: https://github.com/burhanbarakli/sau-fbe-doktora-latex-sablonu
+Kılavuz: https://burhanbarakli.github.io/sau-fbe-doktora-latex-sablonu/
+
+1. İşletim sistemimi belirle. `lualatex --version` ve `latexmk --version` ile TeX kurulu mu bak.
+2. Kurulu değilse uygun dağıtımı kur. Her kurulum komutunu çalıştırmadan önce bana göster ve onay al:
+   - Windows: MiKTeX (`winget install MiKTeX.MiKTeX`) ve latexmk'nin ihtiyaç duyduğu Perl (`winget install StrawberryPerl.StrawberryPerl`). Ardından MiKTeX'in eksik paketleri sormadan kurmasını aç: `initexmf --set-config-value [MPM]AutoInstall=1`
+   - macOS: MacTeX (`brew install --cask mactex-no-gui`)
+   - Linux: TeX Live (`texlive-full` önerilir)
+   - Kurulumdan sonra PATH bu oturumda güncellenmediyse programları tam yoluyla çalıştır.
+3. Depoyu nereye kuracağımı sor (önerin: Belgeler/sau-tez) ve oraya klonla; git yoksa ZIP olarak indirip aç.
+4. `sablon` klasöründe `latexmk tez.tex` ile derle (şablon yalnızca LuaLaTeX ile derlenir, `latexmkrc` bunu ayarlar). Hata çıkarsa `tez.log`'u oku, eksik paketi ya da yazı tipini kur ve `tez.pdf` oluşana kadar tekrarla. `sauthesis.cls` ve `sauwordline.lua` dosyalarını değiştirme.
+5. README'yi ve kılavuzu oku. Sonra tez bilgilerimi bana tek mesajda sor ve `sablon/tez.tex`'in başındaki komutlara yaz: tez türü (doktora / yüksek lisans), tez başlığı (Türkçe ve İngilizce), adım soyadım, öğrenci numaram, anabilim dalı, bilim dalı (varsa), danışman, ortak danışman (varsa), kapak tarihi (AY YIL), savunma tarihi, jüri üyeleri ve kurumları (biliniyorsa). Bilmediğim alanları yorum satırı olarak bırak.
+6. Yeniden derle, PDF'i aç ve neleri değiştirdiğini kısaca özetle. Teslimden önce `notsuz` seçeneğine geçmem gerektiğini hatırlat.
+```
+
+Word'de yazılmış bir tezi şablona aktarmak için (depo klasöründe Claude Code açıkken):
+
+```text
+Word'de yazdığım tezi (DOSYA_YOLU.docx) bu şablona aktar. Kuralları README'den ve https://burhanbarakli.github.io/sau-fbe-doktora-latex-sablonu/ kılavuzundan oku.
+- Bölümleri `sablon/bolumler/` altına, özet, summary, teşekkür, kısaltmalar ve simgeleri `sablon/onkisim/` altına yaz; şekilleri `sablon/sekiller/` klasörüne çıkar. `tez.tex`'teki \input listesini kendi bölümlerime göre güncelle, şablondaki örnek bölümleri kaldır.
+- Şekil, tablo, denklem, dipnot, atıf ve kaynakları kılavuzdaki örneklerle aynı biçimde yaz (\caption, \label, \ref; tablolar için L/C/R sütunları ve \Ts).
+- .docx'i okumak için pandoc ya da python-docx kullanabilirsin. Her bölümden sonra derle ve hataları düzelt.
+- `sauthesis.cls` ve `sauwordline.lua` dosyalarını değiştirme. Metnimin içeriğini değiştirme, yalnızca biçimini LaTeX'e çevir; emin olmadığın yerleri sonda bana listele.
+```
+
+Claude Code yerine claude.ai sohbetine yapıştırırsanız Claude komutları size verir, siz çalıştırırsınız.
+Depo kökündeki [`CLAUDE.md`](CLAUDE.md), Claude Code bu klasörde açıldığında derleme kurallarını ve hangi
+dosyaların değiştirilmeyeceğini kendiliğinden okur.
+
 ## Dosya yapısı
 
 ```
@@ -72,6 +110,7 @@ sablon/
   bolumler/          bölümler, kaynaklar, ekler, özgeçmiş
   sekiller/          görseller
   latexmkrc          latexmk'yi LuaLaTeX'e ayarlar
+CLAUDE.md            Claude Code için proje notları
 docs/                kullanım kılavuzu (GitHub Pages), görseller ve görsel üretme aracı
 word/                resmi Word şablonu ve PDF çıktısı
 karsilastirma/       yan yana PDF, LaTeX çıktısı, denetim raporu ve araçlar

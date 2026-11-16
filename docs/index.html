@@ -35,6 +35,7 @@ code{background:var(--code-bg);padding:.1em .35em;border-radius:4px;word-break:b
 pre{background:var(--code-bg);color:var(--code-ink);padding:14px 16px;border-radius:8px;overflow-x:auto;line-height:1.5;position:relative;margin:12px 0 18px}
 pre code{background:none;padding:0;font-size:1em;word-break:normal}
 pre .c{color:var(--muted)}
+pre.prompt{white-space:pre-wrap;word-break:break-word;padding-top:34px}
 .copy{position:absolute;top:6px;right:6px;border:1px solid var(--line);background:var(--panel);color:var(--muted);font:12px system-ui,sans-serif;padding:3px 8px;border-radius:6px;cursor:pointer;opacity:.85}
 .copy:hover{opacity:1;color:var(--ink)}
 .layout{display:grid;grid-template-columns:260px minmax(0,1fr);max-width:1240px;margin:0 auto}
@@ -110,6 +111,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);color:v
   <ol>
     <li><a href="#hizli">Hızlı başlangıç</a></li>
     <li><a href="#kurulum">Kurulum ve derleme</a></li>
+    <li><a href="#claude">Claude ile kurulum</a></li>
     <li><a href="#dosyalar">Dosya yapısı</a></li>
     <li><a href="#secenekler">Seçenekler (notlar/notsuz)</a></li>
     <li class="grp">Ön kısım</li>
@@ -167,6 +169,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);color:v
 <section id="kurulum">
 <h2>Kurulum ve derleme</h2>
 <p>Şablon yalnızca <b>LuaLaTeX</b> ile derlenir; pdfLaTeX veya XeLaTeX ile derlemeye çalışırsanız hata verir. Üç yoldan birini seçin:</p>
+<div class="note"><p><b>Kısa yol:</b> Kurulumu Claude'a yaptırmak için hazır istem: <a href="#claude">Claude ile kurulum</a>.</p></div>
 
 <h3>1. Kendi bilgisayarınızda (önerilen)</h3>
 <table>
@@ -191,6 +194,40 @@ latexmk -lualatex tez.tex</code></pre>
   <li><b>Menu → Settings → Compiler: LuaLaTeX</b>, <b>Main document: tez.tex</b> seçin.</li>
 </ol>
 <div class="warn"><p>Overleaf'te Times New Roman yoksa çıktı TeX Gyre Termes ile alınır. Satır kırılımları Word'den biraz farklılaşabilir. Kesin uyum için son çıktıyı yerelde alın.</p></div>
+</section>
+
+<section id="claude">
+<h2>Claude ile kurulum</h2>
+<p><a href="https://claude.com/claude-code">Claude Code</a>'u açın (Claude masaüstü uygulamasındaki <b>Code</b> sekmesi ya da terminalde <code>claude</code>) ve aşağıdaki istemi yapıştırın. Claude:</p>
+<ul>
+  <li>TeX dağıtımını kurar (MiKTeX / MacTeX / TeX Live); her kurulum komutundan önce onayınızı alır,</li>
+  <li>depoyu seçtiğiniz klasöre indirir ve ilk <code>tez.pdf</code>'i derler, hata çıkarsa düzeltir,</li>
+  <li>tez bilgilerinizi (başlık, ad, anabilim dalı, danışman, jüri…) sorar ve <code>tez.tex</code>'e yazar.</li>
+</ul>
+<h3>Kurulum istemi</h3>
+<pre class="prompt"><code>Bilgisayarıma SAÜ FBE LaTeX tez şablonunu kurmamı ve ilk PDF'i almamı istiyorum.
+Şablon: https://github.com/burhanbarakli/sau-fbe-doktora-latex-sablonu
+Kılavuz: https://burhanbarakli.github.io/sau-fbe-doktora-latex-sablonu/
+
+1. İşletim sistemimi belirle. `lualatex --version` ve `latexmk --version` ile TeX kurulu mu bak.
+2. Kurulu değilse uygun dağıtımı kur. Her kurulum komutunu çalıştırmadan önce bana göster ve onay al:
+   - Windows: MiKTeX (`winget install MiKTeX.MiKTeX`) ve latexmk'nin ihtiyaç duyduğu Perl (`winget install StrawberryPerl.StrawberryPerl`). Ardından MiKTeX'in eksik paketleri sormadan kurmasını aç: `initexmf --set-config-value [MPM]AutoInstall=1`
+   - macOS: MacTeX (`brew install --cask mactex-no-gui`)
+   - Linux: TeX Live (`texlive-full` önerilir)
+   - Kurulumdan sonra PATH bu oturumda güncellenmediyse programları tam yoluyla çalıştır.
+3. Depoyu nereye kuracağımı sor (önerin: Belgeler/sau-tez) ve oraya klonla; git yoksa ZIP olarak indirip aç.
+4. `sablon` klasöründe `latexmk tez.tex` ile derle (şablon yalnızca LuaLaTeX ile derlenir, `latexmkrc` bunu ayarlar). Hata çıkarsa `tez.log`'u oku, eksik paketi ya da yazı tipini kur ve `tez.pdf` oluşana kadar tekrarla. `sauthesis.cls` ve `sauwordline.lua` dosyalarını değiştirme.
+5. README'yi ve kılavuzu oku. Sonra tez bilgilerimi bana tek mesajda sor ve `sablon/tez.tex`'in başındaki komutlara yaz: tez türü (doktora / yüksek lisans), tez başlığı (Türkçe ve İngilizce), adım soyadım, öğrenci numaram, anabilim dalı, bilim dalı (varsa), danışman, ortak danışman (varsa), kapak tarihi (AY YIL), savunma tarihi, jüri üyeleri ve kurumları (biliniyorsa). Bilmediğim alanları yorum satırı olarak bırak.
+6. Yeniden derle, PDF'i aç ve neleri değiştirdiğini kısaca özetle. Teslimden önce `notsuz` seçeneğine geçmem gerektiğini hatırlat.</code></pre>
+<h3>Word'deki tezi aktarma istemi</h3>
+<p>Tezinizi Word'de yazmaya başladıysanız, kurulumdan sonra depo klasöründe Claude Code açıkken <code>DOSYA_YOLU</code> kısmını kendi dosyanızla değiştirip yapıştırın:</p>
+<pre class="prompt"><code>Word'de yazdığım tezi (DOSYA_YOLU.docx) bu şablona aktar. Kuralları README'den ve https://burhanbarakli.github.io/sau-fbe-doktora-latex-sablonu/ kılavuzundan oku.
+- Bölümleri `sablon/bolumler/` altına, özet, summary, teşekkür, kısaltmalar ve simgeleri `sablon/onkisim/` altına yaz; şekilleri `sablon/sekiller/` klasörüne çıkar. `tez.tex`'teki \input listesini kendi bölümlerime göre güncelle, şablondaki örnek bölümleri kaldır.
+- Şekil, tablo, denklem, dipnot, atıf ve kaynakları kılavuzdaki örneklerle aynı biçimde yaz (\caption, \label, \ref; tablolar için L/C/R sütunları ve \Ts).
+- .docx'i okumak için pandoc ya da python-docx kullanabilirsin. Her bölümden sonra derle ve hataları düzelt.
+- `sauthesis.cls` ve `sauwordline.lua` dosyalarını değiştirme. Metnimin içeriğini değiştirme, yalnızca biçimini LaTeX'e çevir; emin olmadığın yerleri sonda bana listele.</code></pre>
+<div class="note"><p>Depo kökündeki <code>CLAUDE.md</code> dosyasını Claude Code bu klasörde açıldığında kendiliğinden okur: derlemenin LuaLaTeX ile yapılacağını ve <code>sauthesis.cls</code>'nin değiştirilmeyeceğini bilir. Böylece sonraki isteklerinizde (“3. bölüme şu tabloyu ekle”, “kaynakçayı düzenle”) bunları tekrar anlatmanız gerekmez.</p></div>
+<div class="warn"><p>İstemi claude.ai sohbetine yapıştırırsanız Claude komutları size verir, siz kendi terminalinizde çalıştırırsınız. Claude'un yazdığı her şeyi, özellikle tez bilgilerini ve aktarılan metni, teslimden önce kendiniz kontrol edin.</p></div>
 </section>
 
 <section id="dosyalar">
