@@ -18,6 +18,9 @@ LaTeX çıktısı bilerek Word'den ayrılır.
 Kılavuz, neyin hangi dosyada ve hangi komutla değiştirildiğini numaralı ekran görüntüleriyle anlatır.
 Kaynağı [`docs/`](docs/) klasöründedir.
 
+**🖥️ Kendi bilgisayarınızda Overleaf benzeri editörle:** [`sau-fbe-ayakaleaf`](https://github.com/burhanbarakli/sau-fbe-ayakaleaf) deposu, bu şablon
+gömülü olarak AyakaLeaf Pro'yu tek komutla kurar ([kurulum kılavuzu](https://burhanbarakli.github.io/sau-fbe-ayakaleaf/)).
+
 ## Word ve LaTeX karşılaştırması
 
 | Dosya | İçerik |
@@ -60,6 +63,14 @@ latexmk -lualatex tez.tex
 ya da `lualatex tez.tex` komutunu üç kez çalıştırın (içindekiler ve listeler için). Çıktı: `sablon/tez.pdf`.
 `sablon/latexmkrc` dosyası sayesinde yalnızca `latexmk tez.tex` yazmak da LuaLaTeX ile derler; Overleaf ve
 VS Code LaTeX Workshop da bu dosyayı okur.
+
+## Kendi Overleaf sunucunuzda (AyakaLeaf Pro)
+
+TeX dağıtımı kurmadan tarayıcıda yazmak isteyenler için ayrı depo: **[sau-fbe-ayakaleaf](https://github.com/burhanbarakli/sau-fbe-ayakaleaf)**.
+Overleaf Community Edition tabanlı, ücretsiz [AyakaLeaf Pro](https://ayakaleaf-pro.ayaka.space/)'yu Docker ile
+kurar ve bu şablonu şablon galerisine ekler (**Yeni Proje → Diğer şablonlar → Tezler**). Windows (WSL 2), macOS
+ve Linux'ta çalışır; sunucuda derlenen PDF yerel LuaLaTeX çıktısıyla satır satır aynıdır. Resimli kılavuz:
+<https://burhanbarakli.github.io/sau-fbe-ayakaleaf/>.
 
 ## Claude ile kurulum
 

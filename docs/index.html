@@ -168,7 +168,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);color:v
 
 <section id="kurulum">
 <h2>Kurulum ve derleme</h2>
-<p>Şablon yalnızca <b>LuaLaTeX</b> ile derlenir; pdfLaTeX veya XeLaTeX ile derlemeye çalışırsanız hata verir. Üç yoldan birini seçin:</p>
+<p>Şablon yalnızca <b>LuaLaTeX</b> ile derlenir; pdfLaTeX veya XeLaTeX ile derlemeye çalışırsanız hata verir. Dört yoldan birini seçin:</p>
 <div class="note"><p><b>Kısa yol:</b> Kurulumu Claude'a yaptırmak için hazır istem: <a href="#claude">Claude ile kurulum</a>.</p></div>
 
 <h3>1. Kendi bilgisayarınızda (önerilen)</h3>
@@ -194,6 +194,10 @@ latexmk -lualatex tez.tex</code></pre>
   <li><b>Menu → Settings → Compiler: LuaLaTeX</b>, <b>Main document: tez.tex</b> seçin.</li>
 </ol>
 <div class="warn"><p>Overleaf'te Times New Roman yoksa çıktı TeX Gyre Termes ile alınır. Satır kırılımları Word'den biraz farklılaşabilir. Kesin uyum için son çıktıyı yerelde alın.</p></div>
+
+<h3>4. Kendi Overleaf'iniz: AyakaLeaf Pro</h3>
+<p>TeX kurmadan tarayıcıda yazmak, danışmanınızla aynı projede çalışmak ve her şeyi kendi bilgisayarınızda tutmak isterseniz <a href="https://github.com/burhanbarakli/sau-fbe-ayakaleaf">sau-fbe-ayakaleaf</a> deposu, Overleaf tabanlı ücretsiz <a href="https://ayakaleaf-pro.ayaka.space/">AyakaLeaf Pro</a>'yu Docker ile tek komutla kurar ve bu şablonu galeriye ekler: <b>Yeni Proje → Diğer şablonlar → Tezler → Şablon Olarak Aç</b>. Windows (WSL 2), macOS ve Linux'ta çalışır.</p>
+<div class="note"><p>AyakaLeaf'in TeX Live imajında Times New Roman vardır; sunucuda derlenen PDF yerel çıktıyla satır satır aynıdır (yalnız formüller STIX Two Math ile dizilir). Kurulum ve ekran görüntüleri: <a href="https://burhanbarakli.github.io/sau-fbe-ayakaleaf/">AyakaLeaf kurulum kılavuzu</a>.</p></div>
 </section>
 
 <section id="claude">
