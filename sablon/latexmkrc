@@ -1,0 +1,2 @@
+# latexmk ayari: "latexmk tez.tex" komutu LuaLaTeX ile derler (Overleaf ve VS Code LaTeX Workshop da bu dosyayi okur).
+$pdf_mode = 4;

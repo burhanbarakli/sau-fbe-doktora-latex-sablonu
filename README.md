@@ -14,6 +14,10 @@ LaTeX çıktısı bilerek Word'den ayrılır.
 > **Not:** Bu çalışma enstitünün resmi bir ürünü değildir. Tez tesliminden önce güncel kılavuzu ve
 > enstitünün duyurularını kontrol ediniz. Word şablonu ve kılavuzun hakları SAÜ FBE'ye aittir.
 
+**📖 Resimli kullanım kılavuzu:** <https://burhanbarakli.github.io/sau-fbe-doktora-latex-sablonu/>.
+Kılavuz, neyin hangi dosyada ve hangi komutla değiştirildiğini numaralı ekran görüntüleriyle anlatır.
+Kaynağı [`docs/`](docs/) klasöründedir.
+
 ## Word ve LaTeX karşılaştırması
 
 | Dosya | İçerik |
@@ -54,6 +58,8 @@ latexmk -lualatex tez.tex
 ```
 
 ya da `lualatex tez.tex` komutunu üç kez çalıştırın (içindekiler ve listeler için). Çıktı: `sablon/tez.pdf`.
+`sablon/latexmkrc` dosyası sayesinde yalnızca `latexmk tez.tex` yazmak da LuaLaTeX ile derler; Overleaf ve
+VS Code LaTeX Workshop da bu dosyayı okur.
 
 ## Dosya yapısı
 
@@ -65,6 +71,8 @@ sablon/
   onkisim/           teşekkür, kısaltmalar, simgeler, özet, summary
   bolumler/          bölümler, kaynaklar, ekler, özgeçmiş
   sekiller/          görseller
+  latexmkrc          latexmk'yi LuaLaTeX'e ayarlar
+docs/                kullanım kılavuzu (GitHub Pages), görseller ve görsel üretme aracı
 word/                resmi Word şablonu ve PDF çıktısı
 karsilastirma/       yan yana PDF, LaTeX çıktısı, denetim raporu ve araçlar
 ```
@@ -77,16 +85,28 @@ karsilastirma/       yan yana PDF, LaTeX çıktısı, denetim raporu ve araçlar
 
 | Seçenek | Anlamı |
 |---|---|
-| `doktora` / `yukseklisans` | Tez türü |
-| `notlar` / `notsuz` | Şablondaki kırmızı/mavi açıklama notlarını ve kapaktaki not kutusunu göster/gizle (`notsuz`: notlar siyah basılır, not kutusu kalkar). **Teslimden önce `notsuz` yapın ve şablon notlarını kendi metninizle değiştirin.** |
+| `doktora` / `yukseklisans` | Onay sayfasındaki "Doktora Tezi / Yüksek Lisans Tezi olarak kabul edilmiştir" ifadesi (kapaktaki tür `\teztipi` ile yazılır) |
+| `notlar` / `notsuz` | `notlar`: şablondaki kırmızı/mavi açıklamalar, kapaktaki not kutusu ve "(Varsa)", "(Gerekliyse)", "(OCAK 2022)" gibi örnek notlar görünür. `notsuz`: bu notlar hiç basılmaz, metin içindeki renkli yazılar siyaha döner; verilmemiş "varsa" alanları (bilim dalı, ortak danışman, 20/22 cm jüri yerleri) kalkar. **Teslimden önce `notsuz` yapın ve şablon metinlerini kendi metninizle değiştirin.** |
 | `wordline` (varsayılan) / `texline` | Word satır modeli (açgözlü satır kırma, Word satır yüksekliği) ya da klasik TeX dizgisi |
 
 ## Tez bilgileri
 
 `tez.tex` başındaki komutlarla girilir: `\tezbasligi`, `\tezbasligitr`, `\tezbasligien`, `\tezbasligibeyan`,
 `\teztipi` (`DOKTORA TEZİ` / `YÜKSEK LİSANS TEZİ`), `\yazar`, `\ogrencino` (iç kapakta yazar adının altına), `\yazarbeyan`, `\anabilimdali`, `\bilimdali`,
-`\danisman`, `\ortakdanisman`, `\kapaktarihi`, `\savunmatarihi`, `\tesekkurimza`.
-`\anabilimdali` ve `\bilimdali` boş bırakılırsa gri "Bir öğe seçin." yer tutucusu basılır.
+`\danisman`, `\ortakdanisman`, `\kapaktarihi`, `\savunmatarihi`, `\tesekkurimza`, `\beyantarihi`.
+`\anabilimdali` ve `\bilimdali` boş bırakılırsa gri "Bir öğe seçin." yer tutucusu basılır; `notsuz` çıktıda
+verilmemiş bilim dalı ve ortak danışman satırları hiç basılmaz. Etik kurul onayı gerekmiyorsa `\etikonayyok`
+beyannamedeki ilgili cümleyi çıkarır.
+
+Onay sayfasındaki metin `\yazar`, `\tezbasligibeyan`, `\savunmatarihi`, `\anabilimdali`, `\bilimdali` ve tez
+türünden kendiliğinden oluşur (gerekirse `\onayyazar`, `\onaybaslik`, `\onayteztipi` ile elle verilir). Jüri:
+
+```latex
+\juribaskani{Prof. Dr. Ad SOYAD}{Sakarya Üniversitesi}        % 12 cm
+\juridanisman{Prof. Dr. Ad SOYAD}{Sakarya Üniversitesi}       % 14 cm (verilmezse \danisman)
+\juriortakdanisman{Doç. Dr. Ad SOYAD}{Sakarya Üniversitesi}   % 16 cm (verilmezse \ortakdanisman)
+\juriuyesi{Prof. Dr. Ad SOYAD}{Ankara Üniversitesi}          % 18 cm; ikinci ve üçüncü kez: 20 ve 22 cm
+```
 
 ## Yazım komutları
 
