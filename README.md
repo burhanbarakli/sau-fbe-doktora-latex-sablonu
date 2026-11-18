@@ -74,13 +74,18 @@ ya da `lualatex tez.tex` komutunu üç kez çalıştırın (içindekiler ve list
 `sablon/latexmkrc` dosyası sayesinde yalnızca `latexmk tez.tex` yazmak da LuaLaTeX ile derler; Overleaf ve
 VS Code LaTeX Workshop da bu dosyayı okur.
 
+**Masaüstü editörle (solda kod, sağda PDF):** [TeXstudio](https://www.texstudio.org/)'da `sablon/tez.tex`'i açıp
+**F5**'e basın. `tez.tex`'in ilk iki satırı (`% !TeX program = lualatex`, `% !BIB program = biber`) derleyiciyi
+TeXstudio'ya söyler; ayar gerekmez. Adım adım kurulum: [sau-fbe-ayakaleaf → Kurulum 3](https://github.com/burhanbarakli/sau-fbe-ayakaleaf#kurulum-3-masaüstü-editör-en-basit).
+
 ## Kendi Overleaf sunucunuzda (AyakaLeaf Pro)
 
 TeX dağıtımı kurmadan tarayıcıda yazmak isteyenler için ayrı depo: **[sau-fbe-ayakaleaf](https://github.com/burhanbarakli/sau-fbe-ayakaleaf)**.
-Overleaf Community Edition tabanlı, ücretsiz [AyakaLeaf Pro](https://ayakaleaf-pro.ayaka.space/)'yu Docker ile
-kurar, bu şablonu şablon galerisine ekler ve proje listenize hazır bir kopyasını (**Tezim**) koyar. Windows (WSL 2), macOS
-ve Linux'ta çalışır; sunucuda derlenen PDF yerel LuaLaTeX çıktısıyla satır satır aynıdır. Resimli kılavuz:
-<https://burhanbarakli.github.io/sau-fbe-ayakaleaf/>.
+Overleaf Community Edition tabanlı, ücretsiz [AyakaLeaf Pro](https://ayakaleaf-pro.ayaka.space/)'yu kurar, bu şablonu
+şablon galerisine ekler ve proje listenize hazır bir kopyasını (**Tezim**) koyar. Üç yol anlatılır:
+**1. Taşınabilir** (Windows/macOS, zip'i açıp çift tıklama; Docker yok), **2. Docker** (sunucu, çok kullanıcı) ve
+AyakaLeaf'siz **3. Masaüstü editör** (TeXstudio + MiKTeX/MacTeX, en basit). Sunucuda derlenen PDF yerel LuaLaTeX
+çıktısıyla satır satır aynıdır. Resimli kılavuz: <https://burhanbarakli.github.io/sau-fbe-ayakaleaf/>.
 
 ## Claude ile kurulum
 
