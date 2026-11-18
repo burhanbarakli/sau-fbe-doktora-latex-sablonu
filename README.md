@@ -36,9 +36,14 @@ gömülü olarak AyakaLeaf Pro'yu tek komutla kurar ([kurulum kılavuzu](https:/
 | [`karsilastirma/latex_ciktisi.pdf`](karsilastirma/latex_ciktisi.pdf) | Bu şablonun LaTeX çıktısı |
 | [`karsilastirma/SONUC_RAPORU.md`](karsilastirma/SONUC_RAPORU.md) | Denetim raporu: yöntem, ölçümler, Word şablonundaki hatalar, bilinçli farklar |
 
-Özet sonuç: Word 77, LaTeX 79 sayfa; fark, kılavuz gereği bölümlerin sağ (tek) sayfadan başlaması için
-eklenen 2 boş sayfadır. Kılavuza aykırı olmayan yerlerde çıktı Word ile örtüşür; farkların tamamı
-Word şablonunun kılavuza aykırı noktalarından kaynaklanır (ayrıntılar raporda).
+Özet sonuç: Kılavuza aykırı olmayan yerlerde çıktı Word ile örtüşür; farkların tamamı Word şablonunun
+kılavuza aykırı noktalarından kaynaklanır (ayrıntılar raporda). Örneğin bölümler kılavuz gereği sağ (tek)
+sayfadan başlar, Word şablonunda 3. bölüm çift sayfada başlar.
+
+> **Denklem aralıkları (sonradan değişti):** Kılavuz 3.7 ve teslim kontrol formu (madde 15) denklemlerden
+> önce ve sonra 6 nk ister. Word şablonu denklemleri tabloya koyduğu için çıktısında bu aralık ~12 bp daha
+> geniştir (metin → denklem taban çizgisi 38,6 bp; kılavuza göre 26,7 bp). Şablon artık kılavuzu izler.
+> Yukarıdaki karşılaştırma dosyaları bu değişiklikten önceki sürüme (79 sayfa) aittir; güncel çıktı 77 sayfadır.
 
 ## Gereksinimler
 
@@ -268,7 +273,8 @@ kullanır; kılavuza uymak için bunları "ve" yapın.
 - Şekil başlığı altta (önce 6 / sonra 12 nk), tablo başlığı üstte (önce 12 / sonra 6 nk);
   "Şekil 2.1." / "Tablo 2.1." koyu; tek satıra sığarsa ortalı, sığmazsa iki yana yaslı ve 2. satır
   numaradan sonraki metinle aynı hizada; devam eden tabloda "Tablo 2.3. (Devamı): …".
-- Denklem metin bloğuna ortalı, numara (3.1) sağda, normal yazı, sonunda nokta yok.
+- Denklem 1,5 satır aralıklı, önce ve sonra 6 nk (metin paragrafları gibi; taban çizgileri arası 26,7 bp),
+  metin bloğuna ortalı, numara (3.1) sağda, normal yazı, sonunda nokta yok.
 - Dış kapak yazıları kapağın dış kenarına göre ortalı, tez başlığı 14 pt; iç kapakta tez başlığı 12 pt ve
   yazar adının altında öğrenci numarası; onay sayfasında jüri yuvaları 12/14/16 (ortak danışman)/18/20/22 cm.
 - Ekler: "EK A. Ekin adı"; Şekil A.1, Tablo A.1. Özgeçmiş: "TEZDEN TÜRETİLEN YAYINLAR/SUNUMLAR".

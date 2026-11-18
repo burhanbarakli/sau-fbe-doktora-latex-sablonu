@@ -531,19 +531,18 @@
 \newenvironment{alinti}{\par\begingroup\fontsize{10bp}{7.17bp}\selectfont\sau@asc{9.35bp}%
   \sau@setline{17.25bp}\leftskip=36bp\relax}{\par\endgroup}
 
-%------------------------------------------------------------------ denklem (Word denklem tablosu karsiligi)
-% Word: onceki metin -> denklem taban cizgisi 38.8 bp, denklem -> denklem 44.6 bp,
-% denklem -> sonraki metin 38.7 bp. Denklem ortali, numara (3.1) sag kenarda, normal yazi.
-\newcommand\sau@denklemsonu{6.2bp}
+%------------------------------------------------------------------ denklem
+% Kilavuz 3.7 / teslim formu 15: denklemler 1,5 satir aralikli, once ve sonra 6 nk, bos satir yok,
+% metin bloguna ortali; numara (3.1) sag kenarda, normal yazi. Denklem kendi paragrafidir: once ve
+% sonra \parskip (6 bp), satir kutusu metinle ayni (1,5 satir: ust 11.22 + alt 9.48 bp; sauwordline).
+% Normal boydaki denklemde taban cizgileri arasi metin paragraflarindaki gibi 26.7 bp olur; kesirli
+% ya da cok satirli (aligned) denklemde satir kendiliginden buyur, 6 nk aralik korunur.
+% (Word sablonu denklemleri tabloya koydugu icin bu araliklar Word ciktisinda ~12 bp daha genistir:
+% metin -> denklem 38.6, denklem -> denklem 44.3 bp. Kilavuzdaki 6 nk esas alinmistir.)
 \newenvironment{denklem}{\par
-  \ifdim\lastskip=\sau@denklemsonu\vskip-\sau@denklemsonu\relax\fi
-  \vskip6bp\relax
   \refstepcounter{equation}%
-  \setbox\z@\hbox\bgroup\rule[-9.28bp]{0bp}{32.6bp}$\displaystyle}{$\egroup
-  \noindent\hbox to\linewidth{\hfil\box\z@\hfil\llap{\normalfont(\theequation)}}\par
-  \vskip6bp\relax\vskip\sau@denklemsonu\relax}
-% \noindent\hbox ... \par paragraf olusturur; parskip etkisini nötrlemek icin:
-\AtBeginEnvironment{denklem}{\parskip=0bp\relax}
+  \setbox\z@\hbox\bgroup$\displaystyle}{$\egroup
+  \noindent\hbox to\linewidth{\hfil\box\z@\hfil\llap{\normalfont(\theequation)}}\par}
 
 %------------------------------------------------------------------ numarali kaynak listesi
 % Word: [1] bicimi, tek satir, metin girintisi 1037 tw (51.85 bp), asili 680 tw
